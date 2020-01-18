@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en-US"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang="en-US"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="js localstorage sessionstorage" lang="en-US"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style type="text/css" class="bc-style-r1xJKuO5r-default">.bc-iframe,.bc-iframe body{height:100%;margin:0;padding:0;width:100%;overflow:hidden}.bc-iframe body,.bc-player-r1xJKuO5r_default{background-color:#151B17}.bc-iframe .bc-player-r1xJKuO5r_default{background-color:transparent}.vjs-hidden{display:none}// Visually hidden offscreen,but accessible to screen readers. .bc-player-r1xJKuO5r_default .vjs-offscreen{height:1px;left:-9999px;position:absolute;top:0;width:1px}.bc-player-r1xJKuO5r_default *,.bc-player-r1xJKuO5r_default :after,.bc-player-r1xJKuO5r_default :before{box-sizing:inherit;font-size:inherit;color:inherit;line-height:inherit;margin:0}.bc-player-r1xJKuO5r_default select{width:inherit}.bc-player-r1xJKuO5r_default:-moz-full-screen{position:absolute}.bc-player-r1xJKuO5r_default:-webkit-full-screen{width:100%!important;height:100%!important}@font-face{font-family:VideoJS;src:url(//vjs.zencdn.net/f/3/vjs.eot);src:url(//vjs.zencdn.net/f/3/vjs.eot?#iefix) format('embedded-opentype'),url(//vjs.zencdn.net/f/3/vjs.woff) format('woff'),url(//vjs.zencdn.net/f/3/vjs.ttf) format('truetype'),url(//vjs.zencdn.net/f/3/vjs.svg#icomoon) format('svg');font-weight:400;font-style:normal}@font-face{font-family:VideoJS;src:url(data:application/octet-stream;base64,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) format('woff'),url(data:application/octet-stream;base64,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) format('truetype')}.bc-player-r1xJKuO5r_default{box-sizing:content-box;color:#fff;font-family:sans-serif;font-size:14px;height:150px;overflow:hidden;position:relative;transition:cursor 4s;width:300px}.bc-iframe .bc-player-r1xJKuO5r_default{position:absolute;top:0;bottom:0;width:100%;height:100%}@media screen\0{.bc-player-r1xJKuO5r_default.video-js{box-sizing:content-box;color:#fff;font-family:sans-serif;font-size:14px;height:150px;overflow:hidden;position:relative;transition:cursor 4s;width:300px}.bc-iframe .bc-player-r1xJKuO5r_default.video-js{position:absolute;top:0;bottom:0;width:100%;height:100%}}.bc-iframe body{bottom:0;height:auto;left:0;margin:auto;max-height:100%;max-width:100%;position:absolute;right:0;top:0;width:auto}.bc-player-r1xJKuO5r_default.vjs-user-inactive.vjs-fullscreen{cursor:none}.bc-player-r1xJKuO5r_default:fullscreen{bottom:0;left:0;margin:auto;max-height:100%;max-width:100%;position:absolute;right:0;top:0}.bc-player-r1xJKuO5r_default .vjs-tech{position:absolute;top:0;left:0;width:100%;height:100%}.bc-iframe .bc-player-r1xJKuO5r_default .vjs-tech{display:none}.bc-wrap{transition:opacity .35s}.bc-player-r1xJKuO5r_default.video-js .vjs-tech{display:block;opacity:0;transition:opacity .35s}.bc-player-r1xJKuO5r_default.vjs-plugins-ready .vjs-tech{opacity:1}.bc-player-r1xJKuO5r_default .vjs-poster{opacity:0;transition:opacity .35s}.bc-player-r1xJKuO5r_default.vjs-plugins-ready .vjs-poster{opacity:1}.bc-wrap{background-size:contain;background-position:50% 50%;background-repeat:no-repeat}.bc-player-r1xJKuO5r_default .vjs-poster{background-repeat:no-repeat;background-position:center;background-size:contain;background-color:#151B17;height:100%;position:absolute;top:0;width:100%}.bc-player-r1xJKuO5r_default.vjs-has-started .vjs-poster{display:none}.bc-player-r1xJKuO5r_default.vjs-audio.vjs-has-started .vjs-poster{display:block}.bc-player-r1xJKuO5r_default.vjs-using-native-controls .vjs-poster{display:none}.bc-player-r1xJKuO5r_default .vjs-modal-dialog,.bc-player-r1xJKuO5r_default .vjs-modal-dialog-content{box-sizing:border-box;position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.8)}.bc-player-r1xJKuO5r_default .vjs-modal-dialog-content{font-size:12px;line-height:1.5;padding:20px 24px;z-index:1}.bc-player-r1xJKuO5r_default .vjs-control.vjs-close-button{cursor:pointer;height:3em;position:absolute;right:0;top:.5em;z-index:2}.bc-player-r1xJKuO5r_default .vjs-control.vjs-close-button,.bc-player-r1xJKuO5r_default .vjs-icon-cancel{font-family:VideoJS;font-weight:400;font-style:normal}.bc-player-r1xJKuO5r_default .vjs-close-button:before,.bc-player-r1xJKuO5r_default .vjs-icon-cancel:before{content:'\f115'}.bc-player-r1xJKuO5r_default .vjs-share-control,.bc-player-r1xJKuO5r_default .vjs-spacer{-webkit-box-ordinal-group:5;-moz-box-ordinal-group:5;-webkit-order:5;-ms-flex-order:5;order:5}.bc-player-r1xJKuO5r_default .vjs-offscreen{height:1px;left:-9999px;position:absolute;top:0;width:1px}.bc-player-r1xJKuO5r_default .vjs-big-play-button{background:rgba(0,0,0,.45);border-radius:21px;cursor:pointer;height:96px;left:23px;position:absolute;top:21px;width:144px}.bc-player-r1xJKuO5r_default .vjs-big-play-button:before{content:'\e001';color:#fff;display:block;font-family:VideoJS;font-size:23px;line-height:27px;margin:36px auto;opacity:.8;text-align:center;width:23px}.bc-player-r1xJKuO5r_default.vjs-has-started .vjs-big-play-button{display:none}.bc-player-r1xJKuO5r_default.vjs-autoplay .vjs-big-play-button,.bc-player-r1xJKuO5r_default.vjs-autoplay .vjs-poster{display:none}.bc-player-r1xJKuO5r_default.vjs-controls-disabled .vjs-big-play-button,.bc-player-r1xJKuO5r_default.vjs-controls-disabled.vjs-controls-disabled .vjs-control-bar{display:none}.bc-player-r1xJKuO5r_default.vjs-using-native-controls .vjs-big-play-button,.bc-player-r1xJKuO5r_default.vjs-using-native-controls.vjs-using-native-controls .vjs-control-bar{display:none}.bc-player-r1xJKuO5r_default .vjs-control-text{background-color:transparent;border:0;height:0;width:0;display:block;overflow:hidden;text-indent:-9999px}.bc-player-r1xJKuO5r_default .vjs-control-text:before{content:'';display:block;width:0;height:150%}.bc-player-r1xJKuO5r_default .vjs-control-bar{display:none}.bc-player-r1xJKuO5r_default.vjs-has-started .vjs-control-bar{display:flex}.bc-player-r1xJKuO5r_default.vjs-has-started.vjs-controls-disabled .vjs-control-bar{display:none}.bc-player-r1xJKuO5r_default.vjs-has-started.vjs-using-native-controls .vjs-control-bar{display:none}.bc-player-r1xJKuO5r_default .vjs-control-bar{color:#fff;background-color:rgba(0,0,0,.45);border-top:1px solid #000;border-top:1px solid rgba(0,0,0,.6);bottom:0;box-sizing:border-box;left:0;right:0;height:50px;line-height:50px;position:absolute;transition:transform .5s,margin .5s;flex-direction:row;flex-wrap:nowrap;justify-content:space-between;align-content:center;align-items:center}.bc-player-r1xJKuO5r_default.vjs-has-started.vjs-user-inactive .vjs-control-bar{margin-left:-18px;pointer-events:none;transform:translateY(50px)}.bc-player-r1xJKuO5r_default .vjs-control-bar .vjs-control,.bc-player-r1xJKuO5r_default .vjs-control-bar .vjs-time-divider{transition:width .5s}.bc-player-r1xJKuO5r_default.vjs-has-started.vjs-user-inactive .vjs-control,.bc-player-r1xJKuO5r_default.vjs-has-started.vjs-user-inactive .vjs-time-divider{width:0;padding:0}.bc-player-r1xJKuO5r_default .vjs-control-bar .vjs-progress-control{transition:transform .5s}.bc-player-r1xJKuO5r_default.vjs-has-started.vjs-user-inactive .vjs-progress-control{transform:translateY(-28px);width:58px}.bc-player-r1xJKuO5r_default button{background:0 0;border:none;margin:0;padding:0}.bc-player-r1xJKuO5r_default .vjs-control{box-sizing:border-box;cursor:pointer;width:58px;height:50px;flex:0 0 auto;align-self:auto}.bc-player-r1xJKuO5r_default .vjs-control:before{display:block;font-family:VideoJS;font-size:24px;line-height:26px;margin:0 auto;opacity:.8;position:relative;text-align:center;top:13px;width:43px}.bc-player-r1xJKuO5r_default .vjs-big-play-button:focus,.bc-player-r1xJKuO5r_default .vjs-control:focus,.bc-player-r1xJKuO5r_default .vjs-menu-item:focus,.bc-player-r1xJKuO5r_default .vjs-progress-holder:focus,.bc-player-r1xJKuO5r_default .vjs-volume-bar:focus{outline:0}.bc-player-r1xJKuO5r_default .vjs-control:focus:before,.bc-player-r1xJKuO5r_default .vjs-control:hover:before,.bc-player-r1xJKuO5r_default .vjs-menu-item:focus,.bc-player-r1xJKuO5r_default .vjs-menu-item:hover{text-shadow:-1px 1px 20px #fff,1px -1px 20px #fff,-1px 1px 20px #fff,1px -1px 20px #fff}.bc-player-r1xJKuO5r_default .vjs-big-play-button:focus,.bc-player-r1xJKuO5r_default .vjs-big-play-button:hover,.bc-player-r1xJKuO5r_default .vjs-progress-holder:focus:before{box-shadow:0 0 15px 3px #FFF}.bc-player-r1xJKuO5r_default.vjs-has-started.vjs-user-inactive .vjs-progress-holder:focus:before{box-shadow:none}.bc-player-r1xJKuO5r_default .vjs-progress-control{order:5;flex:1 0 auto}.bc-player-r1xJKuO5r_default .vjs-current-time:before,.bc-player-r1xJKuO5r_default .vjs-duration:before,.bc-player-r1xJKuO5r_default .vjs-progress-control:before{content:none}.bc-player-r1xJKuO5r_default .vjs-load-progress,.bc-player-r1xJKuO5r_default .vjs-play-progress,.bc-player-r1xJKuO5r_default .vjs-seek-handle{float:left;display:block}.bc-player-r1xJKuO5r_default .vjs-progress-holder{position:relative;height:4px;padding:24px 0 22px}.bc-player-r1xJKuO5r_default .vjs-progress-holder:before{content:"";display:block;background-color:#8b8e8c;background-color:rgba(255,255,255,.3);width:100%;height:4px;position:absolute}.bc-player-r1xJKuO5r_default .vjs-load-progress,.bc-player-r1xJKuO5r_default .vjs-play-progress{float:none;height:4px}.bc-player-r1xJKuO5r_default .vjs-play-progress,.bc-player-r1xJKuO5r_default .vjs-volume-level{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAHElEQVQIW2P8//+/DyMj4xYGIGAEETABMAcmAADkAAtNi9y2WAAAAABJRU5ErkJggg==) repeat;background-color:#f7f7f7}.bc-player-r1xJKuO5r_default .vjs-play-progress{margin-top:-4px;width:0}.bc-player-r1xJKuO5r_default .vjs-load-progress{background-color:rgba(255,255,255,.3)}.bc-player-r1xJKuO5r_default .vjs-load-progress{width:0}.bc-player-r1xJKuO5r_default .vjs-play-control{order:1}.bc-player-r1xJKuO5r_default .vjs-play-control:before{content:'\e001'}.bc-player-r1xJKuO5r_default .vjs-play-control.vjs-playing:before{content:'\e002'}.bc-player-r1xJKuO5r_default .vjs-current-time,.bc-player-r1xJKuO5r_default .vjs-duration,.bc-player-r1xJKuO5r_default .vjs-time-divider{cursor:default;text-align:center}.bc-player-r1xJKuO5r_default .vjs-current-time{order:2}.bc-player-r1xJKuO5r_default .vjs-time-divider{width:4px;order:3}.bc-player-r1xJKuO5r_default .vjs-duration{order:4}.bc-player-r1xJKuO5r_default .vjs-volume-menu-button{order:6}.bc-player-r1xJKuO5r_default .vjs-captions-button,.bc-player-r1xJKuO5r_default .vjs-chapters-button,.bc-player-r1xJKuO5r_default .vjs-quality-menu-button,.bc-player-r1xJKuO5r_default .vjs-subtitles-button{order:8}.bc-player-r1xJKuO5r_default .vjs-captions-button:before{content:'\e008'}.bc-player-r1xJKuO5r_default .vjs-chapters-button:before,.bc-player-r1xJKuO5r_default .vjs-subtitles-button:before{content:'\e00c'}.bc-player-r1xJKuO5r_default .vjs-fullscreen-control{order:9}.bc-player-r1xJKuO5r_default .vjs-fullscreen-control:before{content:'\e000'}.bc-player-r1xJKuO5r_default .vjs-captions-button>.vjs-control-text,.bc-player-r1xJKuO5r_default .vjs-chapters-button>.vjs-control-text,.bc-player-r1xJKuO5r_default .vjs-current-time .vjs-control-text,.bc-player-r1xJKuO5r_default .vjs-duration .vjs-control-text,.bc-player-r1xJKuO5r_default .vjs-live-display .vjs-control-text,.bc-player-r1xJKuO5r_default .vjs-progress-control .vjs-control-text,.bc-player-r1xJKuO5r_default .vjs-subtitles-button>.vjs-control-text,.bc-player-r1xJKuO5r_default .vjs-volume-handle .vjs-control-text,.bc-player-r1xJKuO5r_default .vjs-volume-menu-button>.vjs-control-text{display:none}.bc-player-r1xJKuO5r_default .vjs-remaining-time{display:none}.bc-player-r1xJKuO5r_default .vjs-live-control,.bc-player-r1xJKuO5r_default.vjs-live .vjs-current-time,.bc-player-r1xJKuO5r_default.vjs-live .vjs-progress-control,.bc-player-r1xJKuO5r_default.vjs-live .vjs-time-divider,.bc-player-r1xJKuO5r_default.vjs-live.vjs-ad-playing .vjs-live-control,.bc-player-r1xJKuO5r_default.vjs-live.vjs-ad-playing .vjs-live-control .vjs-live-display{display:none}.bc-player-r1xJKuO5r_default .vjs-live-control{width:51px;order:5}.bc-player-r1xJKuO5r_default .vjs-live-control .vjs-live-display{margin:0 5px}.bc-player-r1xJKuO5r_default.vjs-live .vjs-live-control{flex:1 0 auto}.bc-player-r1xJKuO5r_default.vjs-live .vjs-live-control,.bc-player-r1xJKuO5r_default.vjs-live .vjs-live-control .vjs-live-display,.bc-player-r1xJKuO5r_default.vjs-live.vjs-ad-playing .vjs-current-time,.bc-player-r1xJKuO5r_default.vjs-live.vjs-ad-playing .vjs-progress-control,.bc-player-r1xJKuO5r_default.vjs-live.vjs-ad-playing .vjs-time-divider{display:block}.bc-player-r1xJKuO5r_default .vjs-menu{display:none;margin:0 -14px 60px -14px;position:absolute;overflow:visible;width:76px;list-style:none;padding:0;transition-property:width,height,opacity;transition-delay:.5s;opacity:0}.bc-player-r1xJKuO5r_default .vjs-menu-content{background-color:rgba(0,0,0,.45)}.bc-player-r1xJKuO5r_default .vjs-menu-button .vjs-menu.vjs-lock-showing,.bc-player-r1xJKuO5r_default .vjs-menu-button:active .vjs-menu,.bc-player-r1xJKuO5r_default.vjs-mouse .vjs-menu-button:hover .vjs-menu{display:block;bottom:0;opacity:1;transition-property:opacity;transition-delay:0s}.bc-player-r1xJKuO5r_default .vjs-menu .vjs-menu-title{display:none}.bc-player-r1xJKuO5r_default .vjs-menu .vjs-menu-item{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;height:24px;line-height:24px;display:block;text-align:center;padding:7px}.bc-player-r1xJKuO5r_default .vjs-menu .vjs-menu-item.vjs-selected{background-color:#fff;background-color:rgba(255,255,255,.8);color:#000;color:rgba(0,0,0,.6)}.bc-player-r1xJKuO5r_default .vjs-menu-content{padding:0;margin:0}.bc-player-r1xJKuO5r_default .vjs-menu-button .vjs-menu .vjs-menu-content{display:block;margin:0;padding:0;position:absolute;bottom:0;max-height:360px;overflow:auto}.bc-player-r1xJKuO5r_default .vjs-captions-button .vjs-menu-content,.bc-player-r1xJKuO5r_default .vjs-chapters-button .vjs-menu-content,.bc-player-r1xJKuO5r_default .vjs-subtitles-button .vjs-menu-content{width:140px;left:-32px}.bc-player-r1xJKuO5r_default .vjs-menu-button .vjs-texttrack-settings{padding-bottom:7px;border-bottom:1px solid;border-color:#d52484}.bc-player-r1xJKuO5r_default .vjs-menu.vjs-contextmenu-ui-menu{display:block;opacity:1}.bc-player-r1xJKuO5r_default.vjs-mouse .vjs-menu.vjs-contextmenu-ui-menu{margin:0;width:130px}.bc-player-r1xJKuO5r_default .vjs-menu.vjs-contextmenu-ui-menu .vjs-menu-item{cursor:pointer}.vjs-modal-overlay{position:absolute;color:#fff;font-family:HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;font-weight:300;top:0;right:0;bottom:0;left:0;background-color:rgba(0,0,0,.75);padding:45px 70px;text-align:left;letter-spacing:1px}@media only screen and (max-width :480px){.vjs-modal-overlay{padding:20px 35px}}.bc-player-r1xJKuO5r_default .vjs-text-track-display{position:absolute;top:0;left:0;bottom:50px;right:0;pointer-events:none}.bc-player-r1xJKuO5r_default.vjs-mouse .vjs-text-track-display{bottom:33px}.bc-player-r1xJKuO5r_default .vjs-tracksettings{position:absolute;overflow:auto;top:45px;right:70px;bottom:50px;left:70px}.bc-player-r1xJKuO5r_default .vjs-tracksettings-controls{position:absolute;bottom:0;left:70px;right:70px;padding:10px 0;text-align:right}@media only screen and (max-width:480px){.bc-player-r1xJKuO5r_default .vjs-tracksettings,.bc-player-r1xJKuO5r_default .vjs-tracksettings-controls{left:35px;right:35px}.bc-player-r1xJKuO5r_default .vjs-tracksettings{top:20px;bottom:40px}.bc-player-r1xJKuO5r_default .vjs-tracksettings-controls{padding:5px 0;bottom:0}}.bc-player-r1xJKuO5r_default .vjs-caption-settings .vjs-tracksetting{margin:5px;padding:3px;min-height:40px}.bc-player-r1xJKuO5r_default .vjs-caption-settings .vjs-tracksetting label{display:block;width:100px;margin-bottom:5px}.bc-player-r1xJKuO5r_default .vjs-caption-settings .vjs-tracksetting span{display:inline;margin-left:5px}.bc-player-r1xJKuO5r_default .vjs-caption-settings .vjs-tracksetting>div{margin-bottom:5px;min-height:20px}.bc-player-r1xJKuO5r_default .vjs-caption-settings .vjs-tracksetting>div:last-child{margin-bottom:0;padding-bottom:0;min-height:0}.bc-player-r1xJKuO5r_default .vjs-caption-settings label>input{margin-right:10px}.bc-player-r1xJKuO5r_default .vjs-caption-settings input[type=button]{width:40px;height:40px}.bc-player-r1xJKuO5r_default .vjs-tracksettings .vjs-label{display:block}.bc-player-r1xJKuO5r_default .vjs-tracksettings-colors,.bc-player-r1xJKuO5r_default .vjs-tracksettings-font{box-sizing:border-box;float:left;width:50%;padding:3px;min-height:40px;min-width:280px}.bc-player-r1xJKuO5r_default .vjs-tracksettings-colors:after,.bc-player-r1xJKuO5r_default .vjs-tracksettings-controls:after,.bc-player-r1xJKuO5r_default .vjs-tracksettings-font:after{clear:both}.bc-player-r1xJKuO5r_default .vjs-tracksetting{margin-bottom:16px;min-height:20px}.bc-player-r1xJKuO5r_default .vjs-opacity{margin-left:10px}.bc-player-r1xJKuO5r_default .vjs-tracksetting button,.bc-player-r1xJKuO5r_default .vjs-tracksetting input,.bc-player-r1xJKuO5r_default .vjs-tracksetting select,.bc-player-r1xJKuO5r_default .vjs-tracksettings-controls button{margin-top:6px;font:inherit;border-radius:2px;background-color:#fff;padding:0 9px;line-height:24px;height:24px;border:none;color:#515151;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}.bc-player-r1xJKuO5r_default .vjs-edge-style select,.bc-player-r1xJKuO5r_default .vjs-font-family select{display:block}.bc-player-r1xJKuO5r_default .vjs-caption-settings button{margin-right:10px}.bc-player-r1xJKuO5r_default .vjs-caption-settings .vjs-done-button{margin-right:0}.bc-player-r1xJKuO5r_default .vjs-volume-menu-button{display:none}.bc-player-r1xJKuO5r_default .vjs-mute-control:before,.bc-player-r1xJKuO5r_default .vjs-volume-menu-button:before{content:'\e006'}.bc-player-r1xJKuO5r_default .vjs-mute-control.vjs-vol-0:before,.bc-player-r1xJKuO5r_default .vjs-volume-menu-button.vjs-vol-0:before{content:'\e003'}.bc-player-r1xJKuO5r_default .vjs-mute-control.vjs-vol-2:before,.bc-player-r1xJKuO5r_default .vjs-volume-menu-button.vjs-vol-2:before{content:'\e005'}.bc-player-r1xJKuO5r_default .vjs-mute-control.vjs-vol-1:before,.bc-player-r1xJKuO5r_default .vjs-volume-menu-button.vjs-vol-1:before{content:'\e004'}.bc-player-r1xJKuO5r_default .vjs-volume-menu-button .vjs-menu{background-color:transparent;opacity:0;bottom:33px}.bc-player-r1xJKuO5r_default .vjs-volume-menu-button .vjs-menu-content{margin-right:0;background-color:rgba(0,0,0,.45);width:0;height:0;padding:0 10px;transform:translate(25px,0);transition-property:width,height;transition-delay:0s}.bc-player-r1xJKuO5r_default .vjs-volume-menu-button .vjs-menu.vjs-lock-showing .vjs-menu-content,.bc-player-r1xJKuO5r_default .vjs-volume-menu-button:active .vjs-menu .vjs-menu-content,.bc-player-r1xJKuO5r_default.vjs-mouse .vjs-volume-menu-button:hover .vjs-menu .vjs-menu-content{height:87px;width:23px;padding:10px 0;overflow:visible}.bc-player-r1xJKuO5r_default .vjs-captions-button.vjs-menu-button:active .vjs-menu .vjs-menu-content,.bc-player-r1xJKuO5r_default .vjs-captions-button.vjs-volume-menu-button .vjs-menu.vjs-lock-showing .vjs-menu-content,.bc-player-r1xJKuO5r_default .vjs-chapters-button.vjs-menu-button:active .vjs-menu .vjs-menu-content,.bc-player-r1xJKuO5r_default .vjs-chapters-button.vjs-volume-menu-button .vjs-menu.vjs-lock-showing .vjs-menu-content,.bc-player-r1xJKuO5r_default .vjs-subtitles-button.vjs-menu-button:active .vjs-menu .vjs-menu-content,.bc-player-r1xJKuO5r_default .vjs-subtitles-button.vjs-volume-menu-button .vjs-menu.vjs-lock-showing .vjs-menu-content,.bc-player-r1xJKuO5r_default.vjs-mouse .vjs-captions-button.vjs-menu-button:hover .vjs-menu .vjs-menu-content,.bc-player-r1xJKuO5r_default.vjs-mouse .vjs-chapters-button.vjs-menu-button:hover .vjs-menu .vjs-menu-content,.bc-player-r1xJKuO5r_default.vjs-mouse .vjs-subtitles-button.vjs-menu-button:hover .vjs-menu .vjs-menu-content{height:auto;box-sizing:content-box}.bc-player-r1xJKuO5r_default .vjs-volume-menu-button .vjs-menu.vjs-lock-showing{display:block}.bc-player-r1xJKuO5r_default .vjs-volume-bar:before{content:"";display:block;background-color:#8b8e8c;background-color:rgba(255,255,255,.3);position:absolute;box-shadow:0 0 15px 2px #fff}.bc-player-r1xJKuO5r_default .vjs-volume-bar.vjs-slider-vertical.vjs-slider-vertical:before{width:3px;height:100%}.bc-player-r1xJKuO5r_default .vjs-volume-bar.vjs-slider-horizontal:before{width:100%;height:3px}.bc-player-r1xJKuO5r_default .vjs-volume-bar{position:relative;padding:0}.bc-player-r1xJKuO5r_default .vjs-volume-bar.vjs-slider-vertical.vjs-slider-vertical{height:100%;width:3px;padding:0 10px 0 10px}.bc-player-r1xJKuO5r_default .vjs-volume-bar.vjs-slider-horizontal{height:3px;padding:10px 0 10px 0;width:100%}.bc-player-r1xJKuO5r_default .vjs-volume-level{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAHElEQVQIW2P8//+/DyMj4xYGIGAEETABMAcmAADkAAtNi9y2WAAAAABJRU5ErkJggg==);background-color:#f7f7f7;display:block;width:3px;background-repeat:repeat repeat;position:absolute;bottom:0}.bc-player-r1xJKuO5r_default .vjs-volume-level.vjs-volume-level{height:100%}.bc-player-r1xJKuO5r_default .vjs-volume-handle{position:absolute;width:5px;background-color:#fff;left:100%;margin-top:-4px;height:5px;float:none;display:block;transform:rotate(45deg)}.bc-player-r1xJKuO5r_default .vjs-loading-spinner{animation:rotation .6s infinite linear;border:6px solid rgba(255,255,255,.15);border-radius:100%;display:none;height:60px;left:50%;margin:-30px 0 0 -30px;position:absolute;top:50%;width:60px}.vjs-waiting.bc-player-r1xJKuO5r_default .vjs-loading-spinner{display:block}.bc-player-r1xJKuO5r_default .vjs-loading-spinner:before{content:"";display:block;position:absolute;left:-6px;top:-6px;height:100%;width:100%;border-top:6px solid rgba(255,255,255,.8);border-left:6px solid transparent;border-bottom:6px solid transparent;border-right:6px solid transparent;border-radius:100%}@keyframes rotation{from{transform:rotate(0)}to{transform:rotate(359deg)}}.bc-player-r1xJKuO5r_default.vjs-native .vjs-big-play-button,.bc-player-r1xJKuO5r_default.vjs-native .vjs-control-bar,.bc-player-r1xJKuO5r_default.vjs-native .vjs-loading-spinner,.bc-player-r1xJKuO5r_default.vjs-native .vjs-poster,.bc-player-r1xJKuO5r_default.vjs-native .vjs-text-track-display{display:none}.bc-player-r1xJKuO5r_default.vjs-mouse{font-size:12px}.bc-player-r1xJKuO5r_default.vjs-mouse .bc-wrap{filter:blur(10px)}.bc-player-r1xJKuO5r_default.vjs-mouse .vjs-big-play-button{width:156px;height:105px;top:17px;left:17px;position:absolute}.bc-player-r1xJKuO5r_default.vjs-mouse .vjs-control-bar{display:flex;height:33px;line-height:33px}.bc-player-r1xJKuO5r_default.vjs-mouse.vjs-has-started.vjs-user-inactive .vjs-control,.bc-player-r1xJKuO5r_default.vjs-mouse.vjs-has-started.vjs-user-inactive .vjs-control-bar,.bc-player-r1xJKuO5r_default.vjs-mouse.vjs-has-started.vjs-user-inactive .vjs-progress-control,.bc-player-r1xJKuO5r_default.vjs-mouse.vjs-has-started.vjs-user-inactive .vjs-time-divider{transition-delay:3s}.bc-player-r1xJKuO5r_default.vjs-mouse.vjs-has-started.vjs-user-inactive .vjs-control-bar{margin-left:-15px;pointer-events:none;transform:translateY(33px)}.bc-player-r1xJKuO5r_default.vjs-mouse.vjs-has-started.vjs-user-inactive .vjs-progress-control{transform:translateY(-19px);width:48px}.bc-player-r1xJKuO5r_default.vjs-mouse .vjs-control{height:33px;width:48px}.bc-player-r1xJKuO5r_default.vjs-mouse .vjs-control:before{font-size:16px;line-height:18px;opacity:.8;width:24px;text-align:center;top:8px}.bc-player-r1xJKuO5r_default.vjs-mouse .vjs-progress-holder{padding:15px 0 14px}.bc-player-r1xJKuO5r_default.vjs-mouse .vjs-menu{width:76px;margin:0 -14px 33px -14px}.bc-player-r1xJKuO5r_default.vjs-mouse .vjs-volume-menu-button{display:block}.bc-player-r1xJKuO5r_default.vjs-mouse .vjs-volume-menu-button:before{content:'\e006'}.bc-player-r1xJKuO5r_default.vjs-mouse .vjs-volume-menu-button.vjs-vol-0:before{content:'\e003'}.bc-player-r1xJKuO5r_default.vjs-mouse .vjs-volume-menu-button.vjs-vol-2:before{content:'\e005'}.bc-player-r1xJKuO5r_default.vjs-mouse .vjs-volume-menu-button.vjs-vol-1:before{content:'\e004'}.bc-player-r1xJKuO5r_default.vjs-mouse .vjs-fullscreen-control:before{content:'\e000'}.bc-player-r1xJKuO5r_default.vjs-mouse.video-js:fullscreen .vjs-fullscreen-control:before{content:'\e00b'}.bc-player-r1xJKuO5r_default.vjs-mouse.video-js.vjs-fullscreen .vjs-fullscreen-control:before{content:'\e00b'}.bc-player-r1xJKuO5r_default.vjs-mouse .vjs-hidden{display:none}@media (max-width:480px){.bc-player-r1xJKuO5r_default:not(.vjs-has-started) .vjs-control-bar{visibility:hidden}}.bc-player-r1xJKuO5r_default,.bc-player-r1xJKuO5r_default *,.bc-player-r1xJKuO5r_default :after,.bc-player-r1xJKuO5r_default :before{-webkit-box-sizing:content-box}@-moz-document url-prefix(){.bc-player-r1xJKuO5r_default .vjs-control-bar{width:100%;-moz-box-sizing:border-box}}.bc-player-r1xJKuO5r_default.vjs-has-started .vjs-control-bar,.bc-player-r1xJKuO5r_default.vjs-mouse .vjs-control-bar{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex}.bc-player-r1xJKuO5r_default .vjs-control-bar{-webkit-backface-visibility:hidden;-webkit-transition:-webkit-transform .5s,margin .5s;-moz-transition:-moz-transform .5s,margin .5s;-ms-transition:-ms-transform .5s,margin .5s;-o-transition:-o-transform .5s,margin .5s;-webkit-box-direction:normal;-moz-box-direction:normal;-webkit-box-orient:horizontal;-moz-box-orient:horizontal;-webkit-flex-direction:row;-ms-flex-direction:row;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;-webkit-box-pack:justify;-moz-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;-webkit-align-content:center;-ms-flex-line-pack:center;-webkit-box-align:center;-moz-box-align:center;-webkit-align-items:center;-ms-flex-align:center}.bc-player-r1xJKuO5r_default.vjs-has-started.vjs-user-inactive .vjs-control-bar{-webkit-transform:translateY(50px);-moz-transform:translateY(50px);-ms-transform:translateY(50px);-o-transform:translateY(50px)}.bc-player-r1xJKuO5r_default .vjs-control-bar .vjs-control,.bc-player-r1xJKuO5r_default .vjs-control-bar .vjs-time-divider{-webkit-transition:width .5s;-moz-transition:width .5s;-ms-transition:width .5s;-o-transition:width .5s}.bc-player-r1xJKuO5r_default .vjs-control-bar .vjs-progress-control{-webkit-transition:-webkit-transform .5s;-moz-transition:-moz-transform .5s;-ms-transition:-ms-transform .5s;-o-transition:-o-transform .5s}.bc-player-r1xJKuO5r_default.vjs-has-started.vjs-user-inactive .vjs-progress-control{-webkit-transform:translateY(-28px);-moz-transform:translateY(-28px);-ms-transform:translateY(-28px);-o-transform:translateY(-28px)}.bc-player-r1xJKuO5r_default .vjs-control{-moz-box-sizing:border-box;-webkit-box-flex:0;-moz-box-flex:0;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;-webkit-align-self:auto;-ms-flex-item-align:auto}.bc-player-r1xJKuO5r_default .vjs-progress-control{-webkit-box-ordinal-group:5;-moz-box-ordinal-group:5;-webkit-order:5;-ms-flex-order:5;-webkit-box-flex:1;-moz-box-flex:1;-webkit-flex:1 0 auto;-ms-flex:1 0 auto}.bc-player-r1xJKuO5r_default .vjs-progress-holder{-webkit-user-select:none}.bc-player-r1xJKuO5r_default .vjs-play-control{-webkit-box-ordinal-group:1;-moz-box-ordinal-group:1;-webkit-order:1;-ms-flex-order:1}.bc-player-r1xJKuO5r_default .vjs-current-time{-webkit-box-ordinal-group:2;-moz-box-ordinal-group:2;-webkit-order:2;-ms-flex-order:2}.bc-player-r1xJKuO5r_default .vjs-time-divider{-webkit-box-ordinal-group:3;-moz-box-ordinal-group:3;-webkit-order:3;-ms-flex-order:3}.bc-player-r1xJKuO5r_default .vjs-duration{-webkit-box-ordinal-group:4;-moz-box-ordinal-group:4;-webkit-order:4;-ms-flex-order:4}.bc-player-r1xJKuO5r_default .vjs-live-control{-webkit-box-ordinal-group:5;-moz-box-ordinal-group:5;-webkit-order:5;-ms-flex-order:5}.bc-player-r1xJKuO5r_default.vjs-live .vjs-live-control{-webkit-box-flex:1;-moz-box-flex:1;-webkit-flex:1 0 auto;-ms-flex:1 0 auto}.bc-player-r1xJKuO5r_default .vjs-volume-menu-button{-webkit-box-ordinal-group:6;-moz-box-ordinal-group:6;-webkit-order:6;-ms-flex-order:6}.bc-player-r1xJKuO5r_default .vjs-captions-button,.bc-player-r1xJKuO5r_default .vjs-chapters-button,.bc-player-r1xJKuO5r_default .vjs-quality-menu-button,.bc-player-r1xJKuO5r_default .vjs-subtitles-button{-webkit-box-ordinal-group:8;-moz-box-ordinal-group:8;-webkit-order:8;-ms-flex-order:8}.bc-player-r1xJKuO5r_default .vjs-fullscreen-control{-webkit-box-ordinal-group:9;-moz-box-ordinal-group:9;-webkit-order:9;-ms-flex-order:9}.bc-player-r1xJKuO5r_default .vjs-menu{-webkit-transition-property:opacity;-moz-transition-property:opacity;-ms-transition-property:opacity;-o-transition-property:opacity;-webkit-transition-delay:.5s;-moz-transition-delay:.5s;-ms-transition-delay:.5s;-o-transition-delay:.5s}.bc-player-r1xJKuO5r_default .vjs-menu .vjs-menu-content{-webkit-transition-property:width,height;-moz-transition-property:width,height;-ms-transition-property:width,height;-o-transition-property:width,height;-webkit-transition-delay:.5s;-moz-transition-delay:.5s;-ms-transition-delay:.5s;-o-transition-delay:.5s}.bc-player-r1xJKuO5r_default .vjs-menu-button:active .vjs-menu .vjs-menu-content,.bc-player-r1xJKuO5r_default .vjs-menu-button:hover .vjs-menu .vjs-menu-content,.bc-player-r1xJKuO5r_default .vjs-menu.vjs-lock-showing .vjs-menu-content{-webkit-transition-delay:0s;-moz-transition-delay:0s;-ms-transition-delay:0s;-o-transition-delay:0s}.bc-player-r1xJKuO5r_default .vjs-volume-menu-button .vjs-menu-content{-webkit-transform:translate(25px,0);-moz-transform:translate(25px,0);-ms-transform:translate(25px,0);-o-transform:translate(25px,0)}.bc-player-r1xJKuO5r_default .vjs-volume-bar{-webkit-user-select:none}.bc-player-r1xJKuO5r_default .vjs-volume-handle{-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);-o-transform:rotate(45deg)}.bc-player-r1xJKuO5r_default.vjs-mouse .vjs-control-bar{display:flex;height:33px;line-height:33px}.bc-player-r1xJKuO5r_default.vjs-mouse.vjs-has-started.vjs-user-inactive .vjs-control,.bc-player-r1xJKuO5r_default.vjs-mouse.vjs-has-started.vjs-user-inactive .vjs-control-bar,.bc-player-r1xJKuO5r_default.vjs-mouse.vjs-has-started.vjs-user-inactive .vjs-progress-control,.bc-player-r1xJKuO5r_default.vjs-mouse.vjs-has-started.vjs-user-inactive .vjs-time-divider{-webkit-transition-delay:3s;-moz-transition-delay:3s;-ms-transition-delay:3s;-o-transition-delay:3s}.bc-player-r1xJKuO5r_default.vjs-mouse.vjs-has-started.vjs-user-inactive .vjs-control-bar{-webkit-transform:translateY(33px);-moz-transform:translateY(33px);-ms-transform:translateY(33px);-o-transform:translateY(33px)}.bc-player-r1xJKuO5r_default.vjs-mouse.vjs-has-started.vjs-user-inactive .vjs-progress-control{-webkit-transform:translateY(-19px);-moz-transform:translateY(-19px);-ms-transform:translateY(-19px);-o-transform:translateY(-19px)}.bc-player-r1xJKuO5r_default.vjs-no-flex .vjs-control,.bc-player-r1xJKuO5r_default.vjs-no-flex .vjs-time-divider{float:left}.bc-player-r1xJKuO5r_default.vjs-no-flex .vjs-control-bar{display:block}.bc-player-r1xJKuO5r_default.vjs-no-flex.vjs-user-inactive .vjs-control-bar{margin-left:0}.bc-player-r1xJKuO5r_default.vjs-mouse.vjs-has-started.vjs-user-inactive .vjs-control-bar{margin-left:0}.bc-player-r1xJKuO5r_default.vjs-no-flex.vjs-has-started.vjs-user-inactive .vjs-progress-control{-moz-transition:-moz-transform .5s .5s,width .5s .5s}.bc-player-r1xJKuO5r_default.vjs-no-flex .vjs-progress-control~.vjs-control{float:right}.bc-player-r1xJKuO5r_default.video-js:full-screen{bottom:0;left:0;margin:auto;max-height:100%;max-width:100%;position:absolute;right:0;top:0}.bc-player-r1xJKuO5r_default.video-js:-webkit-full-screen{bottom:0;left:0;margin:auto;max-height:100%;max-width:100%;position:absolute;right:0;top:0}.bc-player-r1xJKuO5r_default.video-js:-moz-full-screen{bottom:0;left:0;margin:auto;max-height:100%;max-width:100%;position:absolute;right:0;top:0}.bc-player-r1xJKuO5r_default.video-js:-ms-fullscreen{bottom:0;left:0;margin:auto;max-height:100%;max-width:100%;position:absolute;right:0;top:0}.bc-player-r1xJKuO5r_default.video-js:-webkit-full-screen .vjs-fullscreen-control::before{content:'\e00b'}.bc-player-r1xJKuO5r_default.video-js:-moz-full-screen .vjs-fullscreen-control::before{content:'\e00b'}.bc-player-r1xJKuO5r_default.video-js:-ms-fullscreen .vjs-fullscreen-control::before{content:'\e00b'}.bc-player-r1xJKuO5r_default.video-js:-ms-fullscreen .vjs-big-play-button{content:'\e00b'}.bc-player-r1xJKuO5r_default.video-js:full-screen .vjs-fullscreen-control::before{content:'\e00b'}.bc-player-r1xJKuO5r_default.ie8.vjs-has-started.vjs-user-inactive .vjs-control-bar{bottom:-33px}.bc-player-r1xJKuO5r_default.ie8.vjs-has-started.vjs-user-inactive .vjs-progress-control{position:absolute;display:block;bottom:19px;width:100%!important}.bc-player-r1xJKuO5r_default.ie8 .vjs-big-play-button,.bc-player-r1xJKuO5r_default.ie8 .vjs-control-bar,.bc-player-r1xJKuO5r_default.ie8 .vjs-menu,.bc-player-r1xJKuO5r_default.ie8 .vjs-volume-menu-button .vjs-menu-content{background-color:#000;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=45)";zoom:1}.bc-player-r1xJKuO5r_default.ie8 .vjs-control .vjs-menu-content{background-color:#000;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=45)"}.bc-player-r1xJKuO5r_default.ie8 .vjs-captions-button .vjs-menu-content,.bc-player-r1xJKuO5r_default.ie8 .vjs-chapters-button .vjs-menu-content,.bc-player-r1xJKuO5r_default.ie8 .vjs-subtitles-button .vjs-menu-content{border-top:1px solid #000;border-left:1px solid #000;border-right:1px solid #000}.bc-player-r1xJKuO5r_default.ie8 .vjs-progress-holder{background:0 0}.bc-player-r1xJKuO5r_default.ie8 .vjs-load-progress{background:0 0;-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#3CFFFFFF,endColorstr=#3CFFFFFF)";zoom:1}.bc-player-r1xJKuO5r_default.ie8 .vjs-volume-bar{background:0 0;-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#1EFFFFFF,endColorstr=#1EFFFFFF)";zoom:1}.bc-player-r1xJKuO5r_default.ie8 .vjs-volume-bar{margin:24px 0 22px}.bc-player-r1xJKuO5r_default.vjs-mouse.ie8 .vjs-volume-bar{margin:15px 0 14px}.bc-player-r1xJKuO5r_default.ie8 .vjs-volume-bar{background:0 0;-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#1EFFFFFF,endColorstr=#1EFFFFFF)";zoom:1;position:relative;height:5px;width:100%;margin:auto}.bc-player-r1xJKuO5r_default.ie8 .vjs-volume-bar:after{display:block;width:100%;height:5px;position:absolute;top:50%}.bc-player-r1xJKuO5r_default.ie8 .vjs-volume-level{width:100%;left:0;height:5px;bottom:auto;float:none;display:block}.bc-player-r1xJKuO5r_default .vjs-poster img{display:block;margin:auto}.bc-player-r1xJKuO5r_default.ie8 .bc-wrap{display:none}.ie8 .bc-player-r1xJKuO5r_default .vjs-big-play-button:focus,.ie8 .bc-player-r1xJKuO5r_default .vjs-big-play-button:hover,.ie8 .bc-player-r1xJKuO5r_default .vjs-progress-holder:focus:before{border:2px solid #fff}.ie8 .bc-player-r1xJKuO5r_default .vjs-control:focus:before,.ie8 .bc-player-r1xJKuO5r_default .vjs-control:hover:before,.ie8 .bc-player-r1xJKuO5r_default .vjs-volume-bar:focus,.ie8 .bc-player-r1xJKuO5r_default .vjs-volume-control:hover{border:2px solid #fff}.bc-player-r1xJKuO5r_default .vjs-loading-spinner{-moz-animation:rotation .6s infinite linear}@-moz-keyframes rotation{from{-moz-transform:rotate(0)}to{-moz-transform:rotate(359deg)}}.bc-player-r1xJKuO5r_default .vjs-loading-spinner{-webkit-animation:rotation .6s infinite linear}@-webkit-keyframes rotation{from{-webkit-transform:rotate(0)}to{-webkit-transform:rotate(359deg)}}.bc-wrap{-webkit-transition:opacity .35s}.bc-player-r1xJKuO5r_default.vjs-mouse .bc-wrap{-webkit-filter:blur(10px)}.bc-player-r1xJKuO5r_default.video-js .vjs-tech{-webkit-transition:opacity .35s}.bc-player-r1xJKuO5r_default .vjs-poster{-webkit-transition:opacity .35s}.bc-player-r1xJKuO5r_default .vjs-dock-shelf,.bc-player-r1xJKuO5r_default .vjs-dock-text{display:none}.vjs-error-display{color:#fff;display:none;font-family:Helvetica,Arial,sans serif;font-size:16px;line-height:1.428}.vjs-error .vjs-error-display{display:block;position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.5)}.vjs-error .vjs-error-display .vjs-modal-dialog-content{font-size:14px}.vjs-errors-dialog{text-align:left;border:1px #999 solid;overflow:hidden;position:absolute;top:2%;bottom:2%;left:5%;right:5%;padding-left:1%;padding-right:1%;background:rgba(24,24,24,.8);-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000, endColorstr=#CC000000)"}.vjs-errors-details{margin-top:15px}.vjs-errors-message{border:1px #999 solid;background-color:#2c2c2c;overflow:auto;margin-top:15px;padding:15px}.vjs-errors-ok-button-container{display:block;position:absolute;bottom:15px;left:15px;right:15px;text-align:center}.vjs-errors-ok-button{display:block;margin:0 auto;width:80px;height:36px;background-color:#000;border:1px #999 solid;border-radius:5px;color:#999;font-size:14px;cursor:pointer}.vjs-errors-ok-button:hover{border:1px #FFF solid;color:#CCC}.vjs-errors-content-container{overflow:auto;position:absolute;padding-bottom:15px;top:0;left:15px;right:15px;bottom:61px}.vjs-errors-headline{font-size:14px;font-weight:700;padding-right:3em}.vjs-errors-dialog .vjs-control.vjs-close-button{width:3em;height:3em;top:0}.vjs-errors-flashmessage{float:right;font-size:9px;font-style:italic}.vjs-xs.vjs-error-display{font-size:14px;background-color:#000}.vjs-xs.vjs-error-display .vjs-errors-details,.vjs-xs.vjs-error-display .vjs-errors-message{display:none}.vjs-xs .vjs-errors-content-container{top:0}.vjs-xs .vjs-errors-headline{font-size:16px;font-weight:700}.vjs-xs .vjs-errors-dialog{border:none;top:0;bottom:0;left:0;right:0}.vjs-xs.vjs-errors-flashmessage{display:none}@media (max-width:600px),(max-height:250px){.vjs-error-display{font-size:14px;background-color:#000}.vjs-error-display .vjs-errors-details,.vjs-error-display .vjs-errors-message{display:none}.vjs-error-display .vjs-errors-content-container{top:15px}.vjs-error-display .vjs-errors-headline{font-size:16px;font-weight:700}.vjs-error-display .vjs-errors-dialog{border:none;top:0;bottom:0;left:0;right:0}.vjs-errors-flashmessage{display:none}}@font-face{font-family:VideoJS;src:url(../fonts/VideoJS.eot?#iefix) format("eot")}@font-face{font-family:VideoJS;src:url(data:application/font-woff;charset=utf-8;base64,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) format("woff"),url(data:application/x-font-ttf;charset=utf-8;base64,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FjY3PgE3LgEnIwYfAR4BFw4BBTM/ARUzESMGAyUVJwMchM2UWwgNq4JHrQgBAapUaAoJcWMBfiIhDiMrAQJLMB0BBAokNAIBPmMiIQ4iLAECSzAeAQUKJDQBP2MiIQ4iLAECSzAeAQUKJDQBAT75g+5B4arNLNIBJ44ByQL9BQ9mvYCKwA8FBQMDwwJVTGdzBf6VB8IHNR08lld9uT4LCRA/qGNxvUwHNR08lld9uT4LCRA/qGNxvUwHNR08lld9uT4LCRA/qGNxvVJkAWUDDEf+tYP5AQAAAAEAAAAABiAGtgAbAAABBAADER4BFzMRITU2ADcWABcVIREzPgE3EQIAA4D+4v6FBwJ/X+D+1QYBJ97eAScG/tXgX38CB/6FBrUH/oX+4v32X38CAlWV3gEnBgb+2d6V/asCf18CCgEeAXsAAAAAEADGAAEAAAAAAAEABwAAAAEAAAAAAAIABwAHAAEAAAAAAAMABwAOAAEAAAAAAAQABwAVAAEAAAAAAAUACwAcAAEAAAAAAAYABwAnAAEAAAAAAAoAKwAuAAEAAAAAAAsAEwBZAAMAAQQJAAEADgBsAAMAAQQJAAIADgB6AAMAAQQJAAMADgCIAAMAAQQJAAQADgCWAAMAAQQJAAUAFgCkAAMAAQQJAAYADgC6AAMAAQQJAAoAVgDIAAMAAQQJAAsAJgEeVmlkZW9KU1JlZ3VsYXJWaWRlb0pTVmlkZW9KU1ZlcnNpb24gMS4wVmlkZW9KU0dlbmVyYXRlZCBieSBzdmcydHRmIGZyb20gRm9udGVsbG8gcHJvamVjdC5odHRwOi8vZm9udGVsbG8uY29tAFYAaQBkAGUAbwBKAFMAUgBlAGcAdQBsAGEAcgBWAGkAZABlAG8ASgBTAFYAaQBkAGUAbwBKAFMAVgBlAHIAcwBpAG8AbgAgADEALgAwAFYAaQBkAGUAbwBKAFMARwBlAG4AZQByAGEAdABlAGQAIABiAHkAIABzAHYAZwAyAHQAdABmACAAZgByAG8AbQAgAEYAbwBuAHQAZQBsAGwAbwAgAHAAcgBvAGoAZQBjAHQALgBoAHQAdABwADoALwAvAGYAbwBuAHQAZQBsAGwAbwAuAGMAbwBtAAAAAgAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfAAABAgEDAQQBBQEGAQcBCAEJAQoBCwEMAQ0BDgEPARABEQESARMBFAEVARYBFwEYARkBGgEbARwBHQEeAR8EcGxheQtwbGF5LWNpcmNsZQVwYXVzZQt2b2x1bWUtbXV0ZQp2b2x1bWUtbG93CnZvbHVtZS1taWQLdm9sdW1lLWhpZ2gQZnVsbHNjcmVlbi1lbnRlcg9mdWxsc2NyZWVuLWV4aXQGc3F1YXJlB3NwaW5uZXIJc3VidGl0bGVzCGNhcHRpb25zCGNoYXB0ZXJzBXNoYXJlA2NvZwZjaXJjbGUOY2lyY2xlLW91dGxpbmUTY2lyY2xlLWlubmVyLWNpcmNsZQJoZAZjYW5jZWwGcmVwbGF5CGZhY2Vib29rBWdwbHVzCGxpbmtlZGluB3R3aXR0ZXIGdHVtYmxyCXBpbnRlcmVzdBFhdWRpby1kZXNjcmlwdGlvbgVhdWRpbwAAAAAA) format("truetype");font-weight:400;font-style:normal}.vjs-icon-play{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-play:before{content:"\f101"}.vjs-icon-play-circle{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-play-circle:before{content:"\f102"}.vjs-icon-pause{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-pause:before{content:"\f103"}.vjs-icon-volume-mute{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-volume-mute:before{content:"\f104"}.vjs-icon-volume-low{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-volume-low:before{content:"\f105"}.vjs-icon-volume-mid{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-volume-mid:before{content:"\f106"}.vjs-icon-volume-high{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-volume-high:before{content:"\f107"}.vjs-icon-fullscreen-enter{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-fullscreen-enter:before{content:"\f108"}.vjs-icon-fullscreen-exit{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-fullscreen-exit:before{content:"\f109"}.vjs-icon-square{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-square:before{content:"\f10a"}.vjs-icon-spinner{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-spinner:before{content:"\f10b"}.vjs-icon-subtitles{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-subtitles:before{content:"\f10c"}.vjs-icon-captions{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-captions:before{content:"\f10d"}.vjs-icon-chapters{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-chapters:before{content:"\f10e"}.vjs-icon-share{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-share:before{content:"\f10f"}.vjs-icon-cog{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-cog:before{content:"\f110"}.vjs-icon-circle{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-circle:before{content:"\f111"}.vjs-icon-circle-outline{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-circle-outline:before{content:"\f112"}.vjs-icon-circle-inner-circle{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-circle-inner-circle:before{content:"\f113"}.vjs-icon-hd{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-hd:before{content:"\f114"}.vjs-icon-cancel{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-cancel:before{content:"\f115"}.vjs-icon-replay{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-replay:before{content:"\f116"}.vjs-icon-facebook{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-facebook:before{content:"\f117"}.vjs-icon-gplus{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-gplus:before{content:"\f118"}.vjs-icon-linkedin{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-linkedin:before{content:"\f119"}.vjs-icon-twitter{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-twitter:before{content:"\f11a"}.vjs-icon-tumblr{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-tumblr:before{content:"\f11b"}.vjs-icon-pinterest{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-pinterest:before{content:"\f11c"}.vjs-icon-audio-description{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-audio-description:before{content:"\f11d"}.vjs-icon-audio{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-audio:before{content:"\f11e"}.vjs-social-overlay{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;letter-spacing:1px}.vjs-social-overlay .vjs-icon-facebook{background-color:#3b5998}.vjs-social-overlay .vjs-icon-gplus{background-color:#d53326}.vjs-social-overlay .vjs-icon-linkedin{background-color:#069}.vjs-social-overlay .vjs-icon-twitter{background-color:#55acee}.vjs-social-overlay .vjs-icon-tumblr{background-color:#29364b}.vjs-social-overlay .vjs-icon-pinterest{background-color:#c10218}.vjs-social-overlay a{color:#fff}.vjs-social-overlay .vjs-social-description,.vjs-social-overlay .vjs-social-title{margin:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.vjs-social-overlay .vjs-social-title{font-size:1.25em;font-weight:700;line-height:1.33333;margin-bottom:.33333em}.vjs-social-overlay .vjs-social-description{font-size:1em;font-weight:400;line-height:1.5;margin-bottom:1em}.vjs-social-overlay .vjs-social-share-links{margin:0 0 1em;overflow:auto}.vjs-social-overlay .vjs-social-share-link{border-radius:2px;float:left;font-size:1.16667em;line-height:1.07143;margin-right:.57143em;outline:0;padding:.42857em;text-decoration:none}.vjs-social-overlay .vjs-social-direct-link,.vjs-social-overlay .vjs-social-embed-code,.vjs-social-overlay .vjs-social-start-from{float:left;margin-bottom:.66667em}.vjs-social-overlay .vjs-social-direct-link .vjs-social-label-text,.vjs-social-overlay .vjs-social-embed-code .vjs-social-label-text,.vjs-social-overlay .vjs-social-start-from .vjs-social-label-text{display:block;margin-bottom:.16667em}.vjs-social-overlay .vjs-social-direct-link input,.vjs-social-overlay .vjs-social-embed-code input,.vjs-social-overlay .vjs-social-start-from input{border:0;color:#333;display:block;font-size:1em;padding:.5em .66667em;width:100%}.vjs-social-overlay .vjs-social-direct-link input.vjs-invalid,.vjs-social-overlay .vjs-social-embed-code input.vjs-invalid,.vjs-social-overlay .vjs-social-start-from input.vjs-invalid{background-color:red;color:#fff}.vjs-social-overlay .vjs-social-direct-link{padding-right:24px;width:80%}.vjs-social-overlay .vjs-social-start-from{width:20%}.vjs-social-overlay .vjs-social-embed-code{margin-bottom:.33333em;width:100%}.vjs-social-overlay.vjs-social-as-endscreen .vjs-restart{border:0;cursor:pointer;display:block;font-size:4em;margin:0 auto;outline:0;padding:0}.vjs-social-overlay.vjs-social-as-endscreen .vjs-restart:focus:before,.vjs-social-overlay.vjs-social-as-endscreen .vjs-restart:hover:before{text-shadow:1px -1px 20px #fff,-1px 1px 20px #fff}.vjs-social-overlay.vjs-social-as-endscreen.vjs-social-short-player .vjs-social-description{display:none}.vjs-button.vjs-share-control{cursor:pointer;font-weight:700}.vjs-button.vjs-share-control:hover{text-shadow:0 0 1em rgba(255,255,255,.5),0 0 1em rgba(255,255,255,.5),0 0 1em rgba(255,255,255,.5)}.vjs-dock-shelf .vjs-button.vjs-share-control{position:relative}.vjs-dock-shelf .vjs-button.vjs-share-control:before{position:relative;vertical-align:top}.vjs-dock-shelf .vjs-button.vjs-share-control span{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;vertical-align:top;text-decoration:underline;margin-left:2px}.vjs-button.vjs-share-control:before{font-family:VideoJS;font-weight:400;font-style:normal;content:"\f10f"}.vjs-v6 .vjs-button.vjs-share-control:before{content:none}.vjs-v6 .vjs-button.vjs-share-control .vjs-icon-placeholder:before{font-family:VideoJS;font-weight:400;font-style:normal;content:"\f10f"}.vjs-v6 .vjs-dock-shelf .vjs-button.vjs-share-control:before{content:"\f10f"}.vjs-v6 .vjs-dock-shelf .vjs-button.vjs-share-control .vjs-icon-placeholder:before{content:none}.vjs-social-overlay.vjs-social-small .vjs-social-direct-link{width:100%;padding-right:0}.vjs-social-overlay.vjs-social-small .vjs-social-share-links{margin-bottom:.33333em}.vjs-social-overlay.vjs-social-small .vjs-social-share-link{margin-bottom:.66667em}</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="Rondo,Bose Frames,Frames,Smart Sunglasses,Bluetooth sunglasses,Alto,wearable devices,sunglasses">
+<meta name="description" content="The future is now. Discover groundbreaking innovation in wearable tech — audio sunglasses by Bose. Incredible sound quality with augmented reality capabilities packed into slick, timeless designs. Visit our site to learn more.">
+<iframe src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/a.html" style="position: absolute; top: -10000px; left: -1000px;"></iframe><script async="" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/main.js"></script><script src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/bat.js" async=""></script><script async="" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/fbevents.js"></script><script async="" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/uwt.js"></script><script async="" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/core_002.js"></script><script src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/nr-spa-1118.js"></script><script src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/rapid.js"></script>
+<script>
+                    Yo.configure("https://qoe-1.yottaa.net/api/v1/configure.rapid.js?key=rqU-GoJk0yzqpg");
+                </script><script type="text/javascript">(function(){
+  Yo.rum.initialize("https://qoe-1.yottaa.net/log-nt/event", false, "rqU-GoJk0yzqpg", true);
+  // Using Profile: Default Profile
+
+  Yo.rum.set("profileId", 12228);
+
+  // Optimization Status
+
+  Yo.rum.set("optState", "active");
+
+  // Action Add Action for First Party Resources
+
+  Yo.sequence.resource("//" + window.location.hostname).none();
+
+  // Action Add Action for jQuery
+
+  Yo.sequence.resource(Yo.utils.decodeSafeString("jquery")).none();
+
+  // Action Add Action for iFrames
+
+  Yo.sequence.resource(Yo.utils.decodeSafeString("about:blank")).none();
+
+  Yo.sequence.resource(Yo.utils.decodeSafeString("javascript:")).none();
+
+  // Action Add Action for Google Analytics Universal
+
+  Yo.sequence.resource(Yo.utils.decodeSafeString("analytics.js")).none();
+
+  // Action Add Action for Adobe Scene7
+
+  Yo.sequence.resource(Yo.utils.decodeSafeString("scene7.com")).none();
+
+  Yo.sequence.resource(Yo.utils.decodeSafeString("BasicZoomViewer.js")).none();
+
+  // Action Add Action for Adobe Test and Target
+
+  Yo.sequence.resource(Yo.utils.decodeSafeString("/mbox")).none();
+
+  // Action Add Action for Customized Third Optimization with resource name User Defined Raw Javascript
+
+Yo.sequence.resource(Yo.utils.decodeSafeString("RC2e9d6aa80ca043d68192bfbc756e4ce8-source.min.js ")).defer(0);
+Yo.sequence.resource(Yo.utils.decodeSafeString("RC8fceb76a66804f7a999df28535e431f3-source.min.js")).defer(0);
+Yo.sequence.resource(Yo.utils.decodeSafeString("RCdb9e7862cddf436388a236239dd3c108-source.min.js")).defer(0);
+Yo.sequence.resource(Yo.utils.decodeSafeString("RCf2ba13fbfb13418db6abb6769ea9fdaa-source.min.js")).defer(0);
+Yo.sequence.resource(Yo.utils.decodeSafeString("RC834df1c430ea4957b4944d84a8bcd997-source.min.js")).defer(0);
+Yo.sequence.resource(Yo.utils.decodeSafeString("RCa333939cfd2f44afb0a986fa557aa027-source.min.js")).defer(0);
+Yo.sequence.resource(Yo.utils.decodeSafeString("RC9df270ff4b5a430f90cfce5f824393fd-source.min.js")).defer(0);
+Yo.sequence.resource(Yo.utils.decodeSafeString("RC9446d586ca7e44c1b7927ec22a0056fc-source.min.js")).defer(0);
+Yo.sequence.resource(Yo.utils.decodeSafeString("RC20af6ef138ec4ef9a543c5ae3e192531-source.min.js")).defer(0);
+Yo.sequence.resource(Yo.utils.decodeSafeString("RC94fd80ee65c44272af3c898fe3eb6d01-source.min.js")).defer(0);
+Yo.sequence.resource(Yo.utils.decodeSafeString("RC7dc94308df9f4d179253bc7215b82230-source.min.js")).defer(0);
+Yo.sequence.resource(Yo.utils.decodeSafeString("RC0b8f41efbcbf48f6a33cf7a56bdc5e7a-source.min.js")).defer(0);
+Yo.sequence.resource(Yo.utils.decodeSafeString("RCbf28e71f0ddc4e1693f03b9ddf9956c5-source.min.js")).defer(0);
+Yo.sequence.resource(Yo.utils.decodeSafeString("RC77b08154684f40e6bc0a42d8081c7734-source.min.js")).defer(0);
+
+
+
+  // Action Add Action for Adobe Tag Manager
+
+  Yo.sequence.resource(Yo.utils.decodeSafeString("/satellite-")).none();
+
+  Yo.sequence.resource(Yo.utils.decodeSafeString("/satelliteLib-")).none();
+
+  Yo.sequence.resource(Yo.utils.decodeSafeString("adobedtm.com")).none();
+
+  // Action Add Action for Google Tag Manager
+
+  Yo.sequence.resource(Yo.utils.decodeSafeString("googletagmanager")).none();
+
+  // Action Add Action for Customized Third Optimization with resource name User Defined Raw Javascript
+
+Yo.pubsub.subscribe({
+    topic: 'rum/beforeSend',
+    callback: function(message, topic){
+        if (dataLayerBose && dataLayerBose[0] && dataLayerBose[0].pageInfo && dataLayerBose[0].pageInfo.type){
+            message.fullPageURL = dataLayerBose[0].pageInfo.type + '-' + dataLayerBose[0].pageInfo.country + '-' + message.fullPageURL;
+            message.pageCategory = dataLayerBose[0].pageInfo.type + '-' + dataLayerBose[0].pageInfo.country;
+        }
+    }
+});
+  // Action Add Action for Customized Third Optimization with resource name User Defined Raw Javascript
+
+if (document.body != null){
+  Yo.sequence.node(document.body);
+}
+Yo.pubsub.subscribe({topic: 'core/load', callback: function(){
+ Yo.sequence.node(document.body);
+}});
+  // Action Add Action for Customized Third Optimization with resource name User Defined Raw Javascript
+
+Yo.schedule.spread(10);
+})();
+</script>
+<link href="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/design.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/clientlibs-b2c_004.css" type="text/css">
+<link rel="stylesheet" href="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/clientlibs_003.css" type="text/css">
+<link rel="stylesheet" href="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/clientlibs_002.css" type="text/css">
+<link rel="stylesheet" href="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/slick.css" type="text/css">
+<link rel="stylesheet" href="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/clientlibs-b2c.css" type="text/css">
+<link rel="stylesheet" href="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/clientlibs-b2c_005.css" type="text/css">
+<link rel="stylesheet" href="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/clientlibs-b2c_002.css" type="text/css">
+<link rel="stylesheet" href="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/clientlibs_007.css" type="text/css">
+<link rel="stylesheet" href="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/clientlibs-b2c_006.css" type="text/css">
+<link rel="stylesheet" href="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/clientlibs_004.css" type="text/css">
+<link rel="stylesheet" href="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/clientlibs_005.css" type="text/css">
+<link rel="stylesheet" href="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/clientlibs_006.css" type="text/css">
+<link rel="stylesheet" href="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/clientlibs.css" type="text/css">
+<link rel="stylesheet" href="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/clientlibs_008.css" type="text/css">
+<script type="text/javascript" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/jquery_min_002.js"></script>
+<script type="text/javascript" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/utils_min.js"></script>
+<script type="text/javascript" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/jquery.js"></script>
+<script type="text/javascript" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/jqueryMatchHeight.js"></script>
+<script type="text/javascript" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/bose-utils.js"></script>
+<script type="text/javascript" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/js-cookie.js"></script>
+<script type="text/javascript" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/bose-cookieStore.js"></script>
+<script type="text/javascript" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/bose-datalayer.js"></script>
+<script type="text/javascript" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/fancyBox.js"></script>
+<script type="text/javascript" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/gridle.js"></script>
+<script type="text/javascript" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/bose-gridle.js"></script>
+<script type="text/javascript" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/clientlibs-b2c_002.js"></script>
+<script type="text/javascript" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/bose-translation.js"></script>
+<script type="text/javascript" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/javascript-head-all.js"></script>
+<script type="text/javascript">
+            (function() {
+                window.ContextHub = window.ContextHub || {};
+
+                /* setting paths */
+                ContextHub.Paths = ContextHub.Paths || {};
+                ContextHub.Paths.CONTEXTHUB_PATH = "/etc/cloudsettings/default/contexthub";
+                ContextHub.Paths.RESOURCE_PATH = "\/content\/consumer_electronics\/b2c\/north_america\/websites\/en_us\/category\/frames\/_jcr_content\/contexthub";
+                ContextHub.Paths.SEGMENTATION_PATH = "\/etc\/segmentation\/contexthub";
+                ContextHub.Paths.CQ_CONTEXT_PATH = "";
+
+                /* setting initial constants */
+                ContextHub.Constants = ContextHub.Constants || {};
+                ContextHub.Constants.ANONYMOUS_HOME = "/home/users/a/aWF_SvTP14yIvzNpfJV-";
+                ContextHub.Constants.MODE = "no-ui";
+            }());
+        </script><script src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/contexthub.js" type="text/javascript"></script>
+<link rel="canonical" href="https://www.bose.com/en_us/products/frames.html">
+<!--/* Alternate sites */ -->
+<link rel="alternate" href="https://www.bose.ch/de_ch/products/frames.html" hreflang="de-CH">
+<link rel="alternate" href="https://www.bose.fr/fr_fr/products/frames.html" hreflang="fr-FR">
+<link rel="alternate" href="https://www.bosebelgium.be/nl_be/products/frames.html" hreflang="nl-BE">
+<link rel="alternate" href="https://www.bose.vn/vi_vn/products/frames.html" hreflang="vi-VN">
+<link rel="alternate" href="https://www.bose.ae/en_ae/products/frames.html" hreflang="en-AE">
+<link rel="alternate" href="https://www.bose.es/es_es/products/frames.html" hreflang="es-ES">
+<link rel="alternate" href="https://www.bose.ch/fr_ch/products/frames.html" hreflang="fr-CH">
+<link rel="alternate" href="https://www.bosebelgium.be/fr_be/products/frames.html" hreflang="fr-BE">
+<link rel="alternate" href="https://www.bose.id/en_id/products/frames.html" hreflang="en-ID">
+<link rel="alternate" href="https://www.bose.sg/en_sg/products/frames.html" hreflang="en-SG">
+<link rel="alternate" href="https://www.bose.com.au/en_au/products/frames.html" hreflang="en-AU">
+<link rel="alternate" href="https://www.bose.ca/fr_ca/products/frames.html" hreflang="fr-CA">
+<link rel="alternate" href="https://www.bose.hu/hu_hu/products/frames.html" hreflang="hu-HU">
+<link rel="alternate" href="https://www.bose.co.nz/en_nz/products/frames.html" hreflang="en-NZ">
+<link rel="alternate" href="https://www.bose.at/de_at/products/frames.html" hreflang="de-AT">
+<link rel="alternate" href="https://www.bose.de/de_de/products/frames.html" hreflang="de-DE">
+<link rel="alternate" href="https://www.bose.it/it_it/products/frames.html" hreflang="it-IT">
+<link rel="alternate" href="https://www.bose.lu/fr_lu/products/frames.html" hreflang="fr-LU">
+<link rel="alternate" href="https://www.bose.ca/en_ca/products/frames.html" hreflang="en-CA">
+<link rel="alternate" href="https://www.bose.pl/pl_pl/products/frames.html" hreflang="pl-PL">
+<link rel="alternate" href="https://www.bose.nl/nl_nl/products/frames.html" hreflang="nl-NL">
+<link rel="alternate" href="https://www.bose.ph/en_ph/products/frames.html" hreflang="en-PH">
+<link rel="alternate" href="https://www.boseindia.com/en_in/products/frames.html" hreflang="en-IN">
+<link rel="alternate" href="https://www.bose.se/sv_se/products/frames.html" hreflang="sv-SE">
+<link rel="alternate" href="https://www.bose.ie/en_ie/products/frames.html" hreflang="en-IE">
+<link rel="alternate" href="https://www.bose.co.th/en_th/products/frames.html" hreflang="en-TH">
+<link rel="alternate" href="https://www.bose.dk/da_dk/products/frames.html" hreflang="da-DK">
+<link rel="alternate" href="https://www.bose.co.jp/ja_jp/products/frames.html" hreflang="ja-JP">
+<link rel="alternate" href="https://www.bose.my/en_my/products/frames.html" hreflang="en-MY">
+<link rel="alternate" href="https://www.bose.fi/fi_fi/products/frames.html" hreflang="fi-FI">
+<link rel="alternate" href="https://www.bose.no/nb_no/products/frames.html" hreflang="nb-NO">
+<link rel="alternate" href="https://www.bose.mx/es_mx/products/frames.html" hreflang="es-MX">
+<link rel="alternate" href="https://www.bose.ch/it_ch/products/frames.html" hreflang="it-CH">
+<script>
+    var categoryPathSegments = Bose.Utils.getCategoryPathSegments();
+
+    Bose.DataLayer.setPageVariable("path", "https:\/\/www.bose.com\/en_us\/products\/frames.html");
+    Bose.DataLayer.setPageVariable("name", "frames");
+    Bose.DataLayer.setPageVariable("referrerUrl", document.referrer);
+    Bose.DataLayer.setPageVariable("type", "categorypage");
+    Bose.DataLayer.setPageVariable("country", "us");
+    Bose.DataLayer.setPageVariable("countryFullEnglish", "united_states");
+    Bose.DataLayer.setPageVariable("language", "en");
+    Bose.DataLayer.setPageVariable("languageFullEnglish", "english");
+    Bose.DataLayer.setPageVariable("locale", "en\u002DUS");
+    Bose.DataLayer.setPageVariable("RID", Bose.Utils.getParameterByName("ET_RID"));
+    Bose.DataLayer.setPageVariable("CID", Bose.Utils.getParameterByName("ET_CID"));
+    Bose.DataLayer.setPageVariable("formattedLocale", "en_us");
+    Bose.DataLayer.setPageVariable("dataCaptureEnabled", "true");
+    Bose.DataLayer.setPageVariable('primaryCategory', categoryPathSegments[0]);
+    Bose.DataLayer.setPageVariable("environment", "prod\u002D002");
+    Bose.DataLayer.setPageVariable("isProductionMode", "true");
+    Bose.DataLayer.setPageVariable("isAuthorMode", "false");
+    for (var i = 1; i < categoryPathSegments.length; i++) {
+        // Skip first as it is the primary category.
+        Bose.DataLayer.setPageVariable('subCategory' + i, categoryPathSegments[i]);
+    }
+
+    Bose.DataLayer.setSettingsVariable('microServiceUrl', "https:\/\/cdn.prod02.nebula.run\/orion\/");
+    Bose.DataLayer.setSettingsVariable("geolocationEnabled", "true");
+    Bose.DataLayer.setSettingsVariable("ecommerceEnabled", "true");
+
+    Bose.DataLayer.readCookies();
+
+</script>
+<script>
+    Bose.DataLayer.setVariable("Category", "categoryCode", "frames");
+    Bose.DataLayer.setVariable("Category", "parentCategoryCode", "");
+    Bose.DataLayer.setVariable("Category", "categories", "[[\x22frames\x22]]");
+    Bose.DataLayer.setVariable("Category", "pageType", "categorypage");
+</script>
+<script type="text/javascript">var inHeadTS = (new Date()).getTime();</script>
+<script src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/launch-ENf50d3e16785c41448218df6189cad7e6.js"></script><script src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/AppMeasurement.js" async=""></script><style id="at-makers-style" class="at-flicker-control">
+.mboxDefault {visibility: hidden;}
+</style><script>_satellite["__runScript1"](function(event, target) {
+// set ApplicationID
+var newRelic_applicationID = _satellite.getVar('Newrelic_ApplicationID');
+window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(21),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,s){try{l?l-=1:o(s||new UncaughtException(t,e,n),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:c.now();i("err",[t,n])}var i=t("handle"),a=t(22),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,p="nr@seenError",l=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(13),t(12),"addEventListener"in window&&t(6),c.xhrWrappable&&t(14),d=!0)}s.on("fn-start",function(t,e,n){d&&(l+=1)}),s.on("fn-err",function(t,e,n){d&&!n[p]&&(f(n,p,function(){return!0}),this.thrown=!0,o(n))}),s.on("fn-end",function(){d&&!this.thrown&&l>0&&(l-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(){M++,N=y.hash,this[u]=g.now()}function o(){M--,y.hash!==N&&i(0,!0);var t=g.now();this[h]=~~this[h]+t-this[u],this[d]=t}function i(t,e){E.emit("newURL",[""+y,e])}function a(t,e){t.on(e,function(){this[e]=g.now()})}var s="-start",c="-end",f="-body",u="fn"+s,d="fn"+c,p="cb"+s,l="cb"+c,h="jsTime",m="fetch",v="addEventListener",w=window,y=w.location,g=t("loader");if(w[v]&&g.xhrWrappable){var b=t(10),x=t(11),E=t(8),O=t(6),P=t(13),R=t(7),T=t(14),L=t(9),j=t("ee"),S=j.get("tracer");t(15),g.features.spa=!0;var N,M=0;j.on(u,r),j.on(p,r),j.on(d,o),j.on(l,o),j.buffer([u,d,"xhr-done","xhr-resolved"]),O.buffer([u]),P.buffer(["setTimeout"+c,"clearTimeout"+s,u]),T.buffer([u,"new-xhr","send-xhr"+s]),R.buffer([m+s,m+"-done",m+f+s,m+f+c]),E.buffer(["newURL"]),b.buffer([u]),x.buffer(["propagate",p,l,"executor-err","resolve"+s]),S.buffer([u,"no-"+u]),L.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"]),a(T,"send-xhr"+s),a(j,"xhr-resolved"),a(j,"xhr-done"),a(R,m+s),a(R,m+"-done"),a(L,"new-jsonp"),a(L,"jsonp-end"),a(L,"cb-start"),E.on("pushState-end",i),E.on("replaceState-end",i),w[v]("hashchange",i,!0),w[v]("load",i,!0),w[v]("popstate",function(){i(0,M>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(13),s=t(12),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",p="resource",l="-start",h="-end",m="fn"+l,v="fn"+h,w="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(8);var b=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof b&&(this.bstStart=g.now())}),o.on(v,function(t,e){var n=t[0];n instanceof b&&i("bst",[n,e,this.bstStart,g.now()])}),a.on(m,function(t,e,n){this.bstStart=g.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(v,function(t,e){i(w,[e,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+l,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t(24)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=c(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?s(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=r.apply(this,arguments);return o.emit(n+"start",arguments,t),t.then(function(e){return o.emit(n+"end",[null,e],t),e},function(e){throw o.emit(n+"end",[e],t),e})})}var o=t("ee").get("fetch"),i=t(21);e.exports=o;var a=window,s="fetch-",c=s+"body-",f=["arrayBuffer","blob","json","text","formData"],u=a.Request,d=a.Response,p=a.fetch,l="prototype";u&&d&&p&&(i(f,function(t,e){r(u[l],e,c),r(d[l],e,c)}),r(a,"fetch",s),o.on(s+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),o.emit(s+"done",[null,e],n)}else o.emit(s+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t(24)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){function r(t){function e(){c.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}function n(){c.emit("jsonp-error",[],p),c.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}var r=t&&"string"==typeof t.nodeName&&"script"===t.nodeName.toLowerCase();if(r){var o="function"==typeof t.addEventListener;if(o){var a=i(t.src);if(a){var u=s(a),d="function"==typeof u.parent[u.key];if(d){var p={};f.inPlace(u.parent,[u.key],"cb-",p),t.addEventListener("load",e,!1),t.addEventListener("error",n,!1),c.emit("new-jsonp",[t.src],p)}}}}}function o(){return"addEventListener"in window}function i(t){var e=t.match(u);return e?e[1]:null}function a(t,e){var n=t.match(p),r=n[1],o=n[3];return o?a(o,e[r]):e[r]}function s(t){var e=t.match(d);return e&&e.length>=3?{key:e[2],parent:a(e[1],window)}:{key:t,parent:window}}var c=t("ee").get("jsonp"),f=t(24)(c);if(e.exports=c,o()){var u=/[?&](?:callback|cb)=([^&#]+)/,d=/(.*)\.([^.]+)/,p=/^(\w+)(\.|$)(.*)$/,l=["appendChild","insertBefore","replaceChild"];f.inPlace(HTMLElement.prototype,l,"dom-"),f.inPlace(HTMLHeadElement.prototype,l,"dom-"),f.inPlace(HTMLBodyElement.prototype,l,"dom-"),c.on("dom-start",function(t){r(t[0])})}},{}],10:[function(t,e,n){var r=t("ee").get("mutation"),o=t(24)(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],11:[function(t,e,n){function r(t){var e=a.context(),n=s(t,"executor-",e),r=new f(n);return a.context(r).getCtx=function(){return e},a.emit("new-promise",[r,e],e),r}function o(t,e){return e}var i=t(24),a=t("ee").get("promise"),s=i(a),c=t(21),f=NREUM.o.PR;e.exports=a,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){a.emit("propagate",[null,!o],i),o=o||!t}}var o=!1;c(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var i=e.apply(f,arguments),s=f.resolve(i);return s}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&a.emit("propagate",[t,!0],n),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),c(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),a.on("executor-start",function(t){t[0]=s(t[0],"resolve-",this),t[1]=s(t[1],"resolve-",this)}),a.on("executor-err",function(t,e,n){t[1](n)}),s.inPlace(f.prototype,["then"],"then-",o),a.on("then-start",function(t,e){this.promise=e,t[0]=s(t[0],"cb-",this),t[1]=s(t[1],"cb-",this)}),a.on("then-end",function(t,e,n){this.nextPromise=n;var r=this.promise;a.emit("propagate",[r,!0],n)}),a.on("cb-end",function(t,e,n){a.emit("propagate",[n,!0],this.nextPromise)}),a.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=a.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],12:[function(t,e,n){var r=t("ee").get("raf"),o=t(24)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],13:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(24)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],14:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(x?x.then(a):v?v(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),d=t(24)(u),p=NREUM.o,l=p.XHR,h=p.MO,m=p.PR,v=p.SI,w="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];e.exports=u;var b=window.XMLHttpRequest=function(t){var e=new l(t);try{u.emit("new-xhr",[e],e),e.addEventListener(w,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(l,b),b.prototype=l.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var x=m&&m.resolve();if(!v&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===w||a()})},{}],15:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=a.now()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(e.cat=c.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return h(r)}function i(t,e){var n=c(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(16),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,p=t("id"),l=t(19),h=t(18),m=window.XMLHttpRequest;a.features.xhr=!0,t(14),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,l&&(l>34||l<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=h(r);i&&(n.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var s=0;s<d;s++)e.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)})}},{}],16:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],17:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[f.now()].concat(s(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(21),s=t(22),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){u[e]=o(p+e,!0,"api")}),u.addPageAction=o(p+"addPageAction",!0),u.setCurrentRouteName=o(p+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[f.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=o(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now(),!1,e])}},{}],18:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],19:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],20:[function(t,e,n){function r(t,e){if(!o)return!1;if(t!==o)return!1;if(!e)return!0;if(!i)return!1;for(var n=i.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}e.exports={agent:o,version:i,match:r}},{}],21:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],22:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],23:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],24:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(22),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof n?n(r,a):n||{}}catch(f){p([f,"",[r,a,o],s])}u(e+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],s),d}finally{u(e+"end",[r,a,c],s)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<e.length;c++)s=e[c],a=t[s],r(a)||(t[s]=n(a,f?s+o:o,i,s))}function u(n,r,o){if(!c||e){var i=c;c=!0;try{t.emit(n,r,o,e)}catch(a){p([a,n,r,o])}c=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){p([r])}for(var o in t)s.call(t,o)&&(e[o]=t[o]);return e}function p(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function n(n,r,o,i){if(!p.aborted||i){t&&t(n,r,o);for(var a=e(o),s=m(n),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[g[n]];return d&&d.push([b,n,r,a]),a}}function l(t,e){y[t]=m(t).concat(e)}function h(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return y[t]||[]}function v(t){return d[t]=d[t]||o(n)}function w(t,e){f(t,function(t,n){e=e||"feature",g[n]=e,e in u||(u[e]=[])})}var y={},g={},b={on:l,addEventListener:l,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(u.api||u.feature)&&(p.aborted=!0,u=p.backlog={})}var s="nr@context",c=t("gos"),f=t(21),u={},d={},p=e.exports=o();p.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!E++){var t=x.info=NREUM.info,e=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(g,function(e,n){t[e]||(t[e]=n)}),c("mark",["onload",a()+x.offset],null,"api");var n=l.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-x.offset}var s=(new Date).getTime(),c=t("handle"),f=t(21),u=t("ee"),d=t(20),p=window,l=p.document,h="addEventListener",m="attachEvent",v=p.XMLHttpRequest,w=v&&v.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:v,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var y=""+location,g={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-1118.min.js"},b=v&&w&&w[h]&&!/CriOS/.test(navigator.userAgent),x=e.exports={offset:s,now:a,origin:y,features:{},xhrWrappable:b,userAgent:d};t(17),l[h]?(l[h]("DOMContentLoaded",i,!1),p[h]("load",r,!1)):(l[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",s],null,"api");var E=0,O=t(23)},{}]},{},["loader",2,15,5,3,4]);
+;NREUM.info={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",licenseKey:"9f02b80256",applicationID:newRelic_applicationID,sa:1}
+});</script><script>_satellite["__runScript2"](function(event, target) {
+var WindowEvent,VisibilityType;(function(n){n.Load="load";n.BeforeUnload="beforeunload";n.Abort="abort";n.Error="error";n.Unload="unload"})(WindowEvent||(WindowEvent={})),function(n){n[n.Focus=0]="Focus";n[n.Blur=1]="Blur"}(VisibilityType||(VisibilityType={}));var AjaxTiming=function(){function n(n,t,i,r){var u=this;this.getPerformanceTimings=function(n){u.connect=n.connectEnd-n.connectStart;u.dns=n.domainLookupEnd-n.domainLookupStart;u.duration=n.duration;u.load=n.responseEnd-n.responseStart;u.wait=n.responseStart-n.requestStart;u.start=n.startTime;u.redirect=n.redirectEnd-n.redirectStart;n.secureConnectionStart&&(u.ssl=n.connectEnd-n.secureConnectionStart)};this.url=n;this.method=t;this.isAsync=i;this.open=r}return n}(),ProfilerJsError=function(){function n(n,t,i){this.count=0;this.message=n;this.url=t;this.lineNumber=i}return n.createText=function(n,t,i){return[n,t,i].join(":")},n.prototype.getText=function(){return n.createText(this.message,this.url,this.lineNumber)},n}(),ProfilerEventManager=function(){function n(){this.events=[];this.hasAttachEvent=!!window.attachEvent}return n.prototype.add=function(n,t,i){this.events.push({type:n,target:t,func:i});this.hasAttachEvent?t.attachEvent("on"+n,i):t.addEventListener(n,i,!1)},n.prototype.remove=function(n,t,i){this.hasAttachEvent?t.detachEvent(n,i):t.removeEventListener(n,i,!1);var r=this.events.indexOf({type:n,target:t,func:i});r!==1&&this.events.splice(r,1)},n.prototype.clear=function(){for(var t,n=0,i=this.events;n<i.length;n++)t=i[n],this.remove(t.type,t.target,t.func);this.events=[]},n}(),RProfiler=function(){function n(){function o(n){var t=n.target||n.srcElement;return t.nodeType==3&&(t=t.parentNode),r("N/A",t.src||t.URL,-1),!1}var n=this,r,u,e,t,i,f;this.restUrl="g.3gl.net/jp/3003/v3.2.5/M";this.startTime=(new Date).getTime();this.eventsTimingHandler=new EventsTimingHandler;this.inputDelay=new InputDelayHandler;this.version="v3.2.5";this.info={};this.hasInsight=!1;this.data={start:this.startTime,jsCount:0,jsErrors:[],loadTime:-1,loadFired:window.document.readyState=="complete",ajax:[]};this.eventManager=new ProfilerEventManager;this.startAjaxCapture=function(){var i=XMLHttpRequest.prototype,o=i.open,s=i.send,r=[],u={},e=n.data.ajax,h=25,f=typeof performance=="object"&&typeof window.performance.now=="function"&&typeof window.performance.getEntriesByType=="function",t;f&&typeof window.performance.setResourceTimingBufferSize=="function"&&window.performance.setResourceTimingBufferSize(300);t=function(){return f?window.performance.now():(new Date).getTime()};i.open=function(n,i,u,f,e){u===void 0&&(u=!0);this.rpIndex=r.length;r.push(new AjaxTiming(i,n,u,t()));o.call(this,n,i,u,f,e)};i.send=function(n){var i=this,c=this.onreadystatechange,o;(this.onreadystatechange=function(n){var o=r[i.rpIndex],l,s;if(o){l=i.readyState;switch(l){case 1:o.connectionEstablished=t();break;case 2:o.requestReceived=t();break;case 3:o.processingTime=t();break;case 4:o.complete=t();s=!!(i.response&&i.response!=null&&i.response!=undefined);switch(i.responseType){case"text":case"":typeof i.responseText=="string"&&(o.responseSize=i.responseText.length);break;case"json":s&&typeof i.response.toString=="function"&&(o.responseSize=i.response.toString().length);break;case"arraybuffer":s&&typeof i.response.byteLength=="number"&&(o.responseSize=i.response.byteLength);break;case"blob":s&&typeof i.response.size=="number"&&(o.responseSize=i.response.size)}(function(n){setTimeout(function(){var r,s,h,c,o;if(f){var i=n.url,t=[],l=performance.getEntriesByType("resource");for(r=0,s=l;r<s.length;r++)h=s[r],h.name==i&&t.push(h);if(e.push(n),t.length!=0){if(u[i]||(u[i]=[]),t.length==1){n.getPerformanceTimings(t[0]);u[i].push(0);return}c=u[i];for(o in t)if(c.indexOf(o)==-1){n.getPerformanceTimings(t[o]);c.push(o);return}n.getPerformanceTimings(t[0])}}},h)})(o,e)}typeof c=="function"&&c.call(i,n)}},o=r[this.rpIndex],o)&&(n&&!isNaN(n.length)&&(o.sendSize=n.length),o.send=t(),s.call(this,n))}};this.recordPageLoad=function(){n.data.loadTime=(new Date).getTime();n.data.loadFired=!0};this.addError=function(t,i,r){var s,f,u,e,o;for(n.data.jsCount++,s=ProfilerJsError.createText(t,i,r),f=n.data.jsErrors,u=0,e=f;u<e.length;u++)if(o=e[u],o.getText()==s){o.count++;return}f.push(new ProfilerJsError(t,i,r))};this.addInfo=function(t,i,r){if(!n.isNullOrEmpty(t)){if(n.isNullOrEmpty(r))n.info[t]=i;else{if(n.isNullOrEmpty(i))return;n.isNullOrEmpty(n.info[t])&&(n.info[t]={});n.info[t][i]=r}n.hasInsight=!0}};this.clearInfo=function(){n.info={};n.hasInsight=!1};this.clearErrors=function(){n.data.jsCount=0;n.data.jsErrors=[]};this.clearAjax=function(){n.data.ajax=[]};this.getInfo=function(){return n.hasInsight?n.info:null};this.getEventTimingHandler=function(){return n.eventsTimingHandler};this.getInputDelay=function(){return n.inputDelay};this.eventManager.add(WindowEvent.Load,window,this.recordPageLoad);r=this.addError;this.startAjaxCapture();window.opera?this.eventManager.add(WindowEvent.Error,document,o):"onerror"in window&&(u=window.onerror,window.onerror=function(n,t,i){return(r(n,t,i),!!u)?u(n,t,i):!1});!window.__cpCdnPath||(this.restUrl=window.__cpCdnPath.trim());e=window.location.protocol;t=document.createElement("iframe");t.src="about:blank";i=t.style;i.position="absolute";i.top="-10000px";i.left="-1000px";t.addEventListener("load",function(t){var r=t.currentTarget,u,i;r&&r.contentDocument&&(u=r.contentDocument,i=u.createElement("script"),i.type="text/javascript",i.src=e+"//"+n.restUrl,u.body.appendChild(i))});f=document.getElementsByTagName("script")[0];f.parentNode.insertBefore(t,f)}return n.prototype.isNullOrEmpty=function(n){if(n===undefined||n===null)return!0;if(typeof n=="string"){var t=n;return t.trim().length==0}return!1},n.prototype.dispatchCustomEvent=function(n){(function(n){function t(n,t){t=t||{bubbles:!1,cancelable:!1,detail:undefined};var i=document.createEvent("CustomEvent");return i.initCustomEvent(n,t.bubbles,t.cancelable,t.detail),i}if(typeof n.CustomEvent=="function")return!1;t.prototype=Event.prototype;n.CustomEvent=t})(window);var t=new CustomEvent(n);window.dispatchEvent(t)},n}(),InputDelayHandler=function(){function n(){var n=this;this.firstInputDelay=0;this.firstInputTimeStamp=0;this.startTime=0;this.delay=0;this.profileManager=new ProfilerEventManager;this.eventTypes=["click","mousedown","keydown","touchstart","pointerdown",];this.addEventListeners=function(){n.eventTypes.forEach(function(t){n.profileManager.add(t,document,n.onInput)})};this.now=function(){return(new Date).getTime()};this.removeEventListeners=function(){n.eventTypes.forEach(function(t){n.profileManager.remove(t,document,n.onInput)})};this.onInput=function(t){var i,r,u;t.cancelable&&(i=t.timeStamp>1e12,n.firstInputTimeStamp=n.now(),r=i||!window.performance,u=r?n.firstInputTimeStamp:window.performance.now(),n.delay=u-t.timeStamp,t.type=="pointerdown"?n.onPointerDown():(n.removeEventListeners(),n.updateFirstInputDelay()))};this.onPointerUp=function(){n.removeEventListeners();n.updateFirstInputDelay()};this.onPointerCancel=function(){n.removePointerEventListeners()};this.removePointerEventListeners=function(){n.profileManager.remove("pointerup",document,n.onPointerUp);n.profileManager.remove("pointercancel",document,n.onPointerCancel)};this.updateFirstInputDelay=function(){n.delay>=0&&n.delay<n.firstInputTimeStamp-n.startTime&&(n.firstInputDelay=Math.round(n.delay))};this.startSoftNavigationCapture=function(){n.resetSoftNavigationCapture()};this.resetSoftNavigationCapture=function(){n.resetFirstInputDelay();n.addEventListeners()};this.resetFirstInputDelay=function(){n.delay=0;n.firstInputDelay=0;n.startTime=0;n.firstInputTimeStamp=0};this.startTime=this.now();this.addEventListeners()}return n.prototype.onPointerDown=function(){this.profileManager.add("pointerup",document,this.onPointerUp);this.profileManager.add("pointercancel",document,this.onPointerCancel)},n.prototype.getFirstInputDelay=function(){return this.firstInputDelay},n}(),EventsTimingHandler=function(){function n(){var n=this;this.hiddenStrings=["hidden","msHidden","webkitHidden","mozHidden"];this.visibilityStrings=["visibilitychange","msvisibilitychange","webkitvisibilitychange","mozvisibilitychange"];this.captureSoftNavigation=!1;this.hidden="hidden";this.visibilityChange="visibilitychange";this.visibilityEvents=[];this.eventManager=new ProfilerEventManager;this.engagementTimeIntervalMs=1e3;this.engagementTime=0;this.firstEngagementTime=0;this.lastEventTimeStamp=0;this.timeoutId=undefined;this.now=function(){return(new Date).getTime()};this.startVisibilityCapture=function(){n.initializeVisibilityProperties();document.addEventListener(n.visibilityChange,n.captureFocusEvent,!1)};this.initializeVisibilityProperties=function(){for(var r=n.hiddenStrings,i=0,t=0;t<r.length;t++)typeof document[r[t]]!="undefined"&&(i=t);n.visibilityChange=n.visibilityStrings[i];n.hidden=n.hiddenStrings[i]};this.captureFocusEvent=function(){n.updateVisibilityChangeTime();document[n.hidden]||n.captureEngagementTime()};this.updateVisibilityChangeTime=function(){document[n.hidden]?n.captureVisibilityEvent(VisibilityType.Blur):n.captureVisibilityEvent(VisibilityType.Focus)};this.onBlur=function(){n.captureVisibilityEvent(VisibilityType.Blur)};this.onFocus=function(){n.captureVisibilityEvent(VisibilityType.Focus)};this.captureVisibilityEvent=function(t){n.visibilityEvents.push({type:t,time:n.now()})};this.captureEngagementTime=function(t){if(t===void 0&&(t=!0),!n.lastEventTimeStamp){n.engagementTime=n.engagementTimeIntervalMs;n.lastEventTimeStamp=n.now();return}var i=n.now()-n.lastEventTimeStamp;if(n.lastEventTimeStamp=n.now(),t&&n.firstEngagementTime===0&&(n.firstEngagementTime=n.now()),i>0&&i<n.engagementTimeIntervalMs){clearTimeout(n.timeoutId);n.engagementTime+=i;return}n.startTimer()};this.captureMouseMove=function(){n.captureEngagementTime(!1)};this.startTimer=function(){n.timeoutId=setTimeout(function(){n.engagementTime+=n.engagementTimeIntervalMs},n.engagementTimeIntervalMs)};this.getFocusAwayTime=function(){var i=n.visibilityEvents,t=-1,s,h,o;if(i.length===0)return 0;for(var r=t,u=0,f=t,e=0;u<i.length;)i[u].type===VisibilityType.Blur&&r===t&&(r=u),s=f===t&&r!==t,i[u].type===VisibilityType.Focus&&s&&(f=u),h=r!==t&&f!==t,h&&(o=i[f].time-i[r].time,o>0&&(e+=o),r=t,f=t),u=u+1;return r===i.length-1&&(e+=n.now()-i[r].time),e};this.getEngagementTime=function(){return n.engagementTime};this.getFirstEngagementTime=function(){return n.firstEngagementTime};this.startSoftNavigationCapture=function(){n.captureSoftNavigation=!0};this.resetSoftNavigationCapture=function(){n.resetEngagementMetrics();n.visibilityEvents=[]};this.resetEngagementMetrics=function(){n.engagementTime=0;n.lastEventTimeStamp=n.now();n.firstEngagementTime=0};this.clear=function(){n.eventManager.clear()};this.captureEngagementTime(!1);this.eventManager.add("scroll",document,this.captureEngagementTime);this.eventManager.add("resize",window,this.captureEngagementTime);this.eventManager.add("mouseup",document,this.captureEngagementTime);this.eventManager.add("keyup",document,this.captureEngagementTime);this.eventManager.add("mousemove",document,this.captureMouseMove);this.eventManager.add("focus",window,this.onFocus);this.eventManager.add("blur",window,this.onBlur);this.eventManager.add("focus",document,this.onFocus);this.eventManager.add("blur",document,this.onBlur)}return n}(),profiler=new RProfiler;window.RProfiler=profiler;window.WindowEvent=WindowEvent;profiler.dispatchCustomEvent("GlimpseLoaded");
+
+
+});</script>
+<link rel="icon" type="image/vnd.microsoft.icon" href="https://static.bose.com/etc/designs/bose/consumer-products-2016/favicon.ico">
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="https://static.bose.com/etc/designs/bose/consumer-products-2016/favicon.ico">
+<title>Wearables by Bose – AR Audio Sunglasses</title>
+<meta property="og:title" content="Wearables by Bose – AR Audio Sunglasses">
+<meta property="og:description" content="The future is now. Discover groundbreaking innovation in wearable tech — audio sunglasses by Bose. Incredible sound quality with augmented reality capabilities packed into slick, timeless designs. Visit our site to learn more.">
+<meta property="og:image" content="https://static.bose.com/etc/designs/bose/base2016/design/images/bose_logo_white_on_black.jpg">
+<meta property="og:url" content="https://www.bose.com/en_us/products/frames.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@Bose">
+<meta property="twitter:title" content="Wearables by Bose – AR Audio Sunglasses">
+<meta property="twitter:description" content="The future is now. Discover groundbreaking innovation in wearable tech — audio sunglasses by Bose. Incredible sound quality with augmented reality capabilities packed into slick, timeless designs. Visit our site to learn more.">
+<meta property="twitter:image" content="https://static.bose.com/etc/designs/bose/base2016/design/images/bose_logo_white_on_black.jpg">
+<style type="text/css">.fancybox-margin{margin-right:18px;}</style><script src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/RC2e9d6aa80ca043d68192bfbc756e4ce8-source.js" async=""></script><script src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/RC7f81d11164fe4157a1d9909022c60862-source.js" async=""></script><script src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/RCe46130cce53b41258454324496171ff7-source.js" async=""></script><script src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/RCdf57f70bc1714f2fa958fcd8f109bcbc-source.js" async=""></script><script src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/RC77b08154684f40e6bc0a42d8081c7734-source.js" async=""></script><script src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/RC8fceb76a66804f7a999df28535e431f3-source.js" async=""></script><script src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/RCdb9e7862cddf436388a236239dd3c108-source.js" async=""></script><script src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/RCf2ba13fbfb13418db6abb6769ea9fdaa-source.js" async=""></script><script src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/RC834df1c430ea4957b4944d84a8bcd997-source.js" async=""></script><script src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/RC9df270ff4b5a430f90cfce5f824393fd-source.js" async=""></script><script src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/RC7dc94308df9f4d179253bc7215b82230-source.js" async=""></script><script src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/RC0b8f41efbcbf48f6a33cf7a56bdc5e7a-source.js" async=""></script><script src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/RCbf28e71f0ddc4e1693f03b9ddf9956c5-source.js" async=""></script></head>
+<body class="-fullWidth bose-body__item3 slabtexted" data-tracking-event="page-impression" data-tracking-info="{&quot;name&quot;:&quot;frames&quot;,&quot;type&quot;:&quot;categorypage&quot;,&quot;country&quot;:&quot;united_states&quot;,&quot;environment&quot;:&quot;prod-002&quot;,&quot;language&quot;:&quot;english&quot;}">
+<a name="top"></a>
+<header class="bose-headercontainer -fullWidth -pushDownContent">
+<!-- start: bose-header -->
+<div class="bose-infoBar2016 bose-infoBar2016--cookie bose-infoBar2016--fixedBottom bose-infoBar2016--closeable" data-privacy-max-clicks="0" data-privacy-initial="p=NONE;t=1" data-privacy-consent="p=NONE;t=1" data-privacy-enabled="false" data-privacy-reset-date="2018-09-27T11:00:00.000-04:00">
+<div class="bose-infoBar2016__container">
+<input type="hidden" class="checkForResetDate" value="1538060400000">
+<div class="bose-infoBar2016__message"><p>By using this site, you acknowledge we use cookies to enhance your experience. Learn more or change settings <a class="bose-link" href="https://www.bose.com/en_us/support/cookie_policy.html" target="_self">here</a>.<br>
+</p>
+</div>
+<div class="bose-infoBar2016__closeArea">
+<a aria-label="close" class="bose-infoBar2016__closeAreaIcon" title="close">&nbsp;</a>
+</div>
+</div>
+</div>
+<div class="bose-infoBar2016 bose-infoBar2016--alert bose-infoBar2016--fullWidth bose-infoBar2016--closeable -grey" style="display: block;">
+<div class="bose-infoBar2016__container clearfix">
+<div class="bose-infoBar2016__message">FREE 2-DAY SHIPPING FOR ORDERS OF $50 OR MORE, AND FREE RETURN SHIPPING
+</div>
+<div class="bose-infoBar2016__closeArea">
+<button class="bose-infoBar2016__closeAreaIcon">
+<span class="bose-screenReaderText"> close banner</span>
+</button>
+</div>
+</div>
+</div>
+<div class="gigya-account-lock-message hide" data-value="Account temporarily locked out. Please reset your password."> </div>
+<div class="bose-header2016 -pushDownContent ">
+<div class="bose-header2016__container">
+<button class="bose-header2016__hamburger  bose-hamburger" type="button" data-open-menu="Open menu" data-close-menu="Close menu" aria-label="Open menu" aria-expanded="false">
+<span class="bose-hamburger__icon"></span>
+</button>
+<div class="bose-header2016__logocontainer">
+<a itemprop="url" href="#mainContent" title="Skip to content" class="bose-header2016__skiplinks">Skip to content</a>
+<a itemprop="url" href="https://www.bose.com/en_us/index.html" title="Bose" class="bose-header2016__logo bose-logo">
+<img src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/bose_logo.png" alt="Bose" class="bose-logo__desktop">
+<img src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/bose_mobile_logo.png" alt="Bose" class="bose-logo__mobile">
+</a>
+</div>
+<div class="bose-header2016__flexwrapper">
+<div class="bose-header2016__navcontainer">
+<div class="bose-header2016__servicebar -rightSpacing">
+<div class="bose-serviceBar2016">
+<div class="bose-serviceBar2016__container">
+<a aria-label="Search" class="bose-serviceBar2016__search bose-serviceBar2016__item bose-serviceBar2016__icon bose-serviceBar2016__icon--search" title="Search" data-open-button="true" href="javascript:;">
+</a>
+<div class="bose-serviceBar2016__item bose-header2016__search">
+<form class="bose-singleInputForm bose-singleInputForm--noMargin  bose-singleInputForm--searchTop " method="get" action="/en_us/search.search.html">
+<input aria-label="Search" id="search-input-de04894c-7297-42f7-9dc2-1ba78244fd56" name="queryForDisplay" class="bose-singleInputForm__input bose-singleInputForm__globalSearch bose-singleInputForm__autoComplete ui-autocomplete-input" type="search" placeholder="Search..." role="combobox" aria-owns="quicklinks" aria-expanded="false" autocomplete="off">
+<div id="quicklinks" class="bose-quickLinks" role="listbox">
+<p role="none" class="bose-quickLinks__title">Quick links</p>
+<div class="js-bose-quickLinksContainer">
+<a id="link-" title="QuietComfort 35 wireless headphones II" role="option" href="https://www.bose.com/en_us/products/headphones/over_ear_headphones/quietcomfort-35-wireless-ii.html" class="bose-quickLinks__navItems">QuietComfort 35 wireless headphones II</a>
+<a id="link-" title="Bose Noise Cancelling Headphones 700" role="option" href="https://www.bose.com/en_us/products/headphones/noise_cancelling_headphones/noise-cancelling-headphones-700.html" class="bose-quickLinks__navItems">Bose Noise Cancelling Headphones 700</a>
+<a id="link-" title="SoundSport Free wireless headphones" role="option" href="https://www.bose.com/en_us/products/headphones/earphones/soundsport-free-wireless.html" class="bose-quickLinks__navItems">SoundSport Free wireless headphones</a>
+<a id="link-" title="Bose Frames Alto" role="option" href="https://www.bose.com/en_us/products/frames/bose-frames-alto.html" class="bose-quickLinks__navItems">Bose Frames Alto</a>
+<a id="link-" title="Product warranty" role="option" href="https://www.bose.com/en_us/legal/product_warranty.html" class="bose-quickLinks__navItems">Product warranty</a>
+</div>
+</div>
+<div class="js-bose-suggestionContainer"><ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-1" tabindex="0" style="display: none;"></ul></div>
+<input name="query" class="bose-singleInputForm__input" type="hidden" data-autocompletesearchurl="https://content.atomz.com/autocomplete/sp10/05/0d/59/?max_results=10&amp;sp_cs=UTF-8;&amp;query=">
+<button aria-label="Search" class="bose-singleInputForm__submit bose-singleInputForm__submit--2016" type="submit">
+<span>Search</span>
+<span class="bose-icon bose-icon--search">&nbsp;</span>
+</button>
+<input name="category" type="hidden" value="frames">
+<a class="bose-singleInputForm__close">
+<span class="bose-screenReaderText">close</span>
+</a>
+</form>
+<div class="bose-header2016__cancelButton">
+<a href="#" role="button">Cancel</a>
+</div>
+</div>
+<input type="hidden" class="js-userProfile-microservice-url" value="https://nebula.prod02.bose.com/nebula-gd-gateway">
+<div class="bose-accountWidget js-accountWidget bose-accountWidget--serviceBar js-accountWidget-serviceBar" data-gigyaurl="https://cdns.us1.gigya.com/js/gigya.js?apikey=3_omYBUUOETzxO0VR7yk9Z-KLFf6S0i_STTe8zNCg4VCzwMy2nK5XIdsbKENbdtVZp&amp;lang=en_us">
+<a class="bose-accountWidget__text js-accountWidget-signIn" href="javascript:void(0);">Sign in/register</a>
+<a class="bose-accountWidget__text js-accountWidget-options bose-accountWidget_hideBlock ctHidden" dashboard-path="/content/consumer_electronics/b2c/north_america/websites/en_us/index/myaccount/dashboard.html" href="https://www.bose.com/en_us/myaccount/dashboard.html"></a>
+</div>
+<input type="hidden" class="gigya-api-key" value="3_omYBUUOETzxO0VR7yk9Z-KLFf6S0i_STTe8zNCg4VCzwMy2nK5XIdsbKENbdtVZp">
+<a class="bose-serviceBar2016__item bose-serviceBar2016__icon bose-serviceBar2016__icon--location bose-serviceBar2016__icon--visible" href="https://www.bose.com/en_us/store_locator.html">
+Stores
+</a>
+<!-- hidden field to find if the page is PRO site page -->
+<input type="hidden" value="false" id="bose-serviceBar2016__contactPro">
+<span class="bose-searchIcon hide js-bose-searchIcon" type="button" data-open-menu="Open menu" data-close-menu="Close menu" aria-label="Open menu" aria-expanded="false">
+</span>
+<a aria-label="Your cart is empty." class="bose-serviceBar2016__shoppingCartArea bose-serviceBar2016__item bose-serviceBar2016__icon bose-serviceBar2016__icon--shoppingCartFull" href="https://www.bose.com/en_us/my-cart.html">
+<span class="bose-serviceBar2016__label">Cart</span>
+</a>
+</div>
+</div>
+</div>
+<div class="bose-header2016__topnav bose-header__navBar--spacing">
+
+<div class="bose-navBar2016" lpos="TopNavigation">
+<ul class="bose-navBar2016__items">
+<li class="bose-navBar2016__item   bose-navBar2016__menuItem--0">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;gift_ideas&quot;,&quot;category&quot;:&quot;gift_ideas&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/products/gift_ideas.html" target="_self" class="bose-navBar2016__btn" title="Gifts">
+<span class="bose-navBar2016__btnText">Gifts</span>
+</a>
+<div class="bose-navBar2016__itemFoldout bose-navBarFoldout2016 bose-navBarFoldout2016" data-tracking-event="navigation-impression" data-tracking-info="{&quot;category&quot;:&quot;gift_ideas&quot;,&quot;type&quot;:&quot;header&quot;}">
+<div class="bose-navBarFoldout2016__menuitemsWrapper">
+<div class="bose-navBarFoldout2016__menuitemsWrapper__inner parent" lpos="SubNavigation">
+<ul class="bose-navBarFoldout2016__menuitems parent">
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;gifts_for_students&quot;,&quot;category&quot;:&quot;gift_ideas&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/products/gift_ideas/gifts_for_students.html" target="_self" title="STUDENTS">
+<span class="bose-navBarFoldout2016__menuitemLabel">STUDENTS</span>
+</a>
+</li>
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;gifts_for_him&quot;,&quot;category&quot;:&quot;gift_ideas&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/products/gift_ideas/gifts_for_him.html" target="_self" title="FOR HIM">
+<span class="bose-navBarFoldout2016__menuitemLabel">FOR HIM</span>
+</a>
+</li>
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;gifts_for_her&quot;,&quot;category&quot;:&quot;gift_ideas&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/products/gift_ideas/gifts_for_her.html" target="_self" title="FOR HER">
+<span class="bose-navBarFoldout2016__menuitemLabel">FOR HER</span>
+</a>
+</li>
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;gifts_for_fitness_and_sports&quot;,&quot;category&quot;:&quot;gift_ideas&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/products/gift_ideas/gifts_for_fitness_and_sports.html" target="_self" title="SPORTS AND OUTDOORS">
+<span class="bose-navBarFoldout2016__menuitemLabel">SPORTS AND OUTDOORS</span>
+</a>
+</li>
+</ul>
+<ul class="bose-navBarFoldout2016__menuitems parent">
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;gifts_for_home&quot;,&quot;category&quot;:&quot;gift_ideas&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/products/gift_ideas/gifts_for_home.html" target="_self" title="HOME">
+<span class="bose-navBarFoldout2016__menuitemLabel">HOME</span>
+</a>
+</li>
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;gifts_for_travelers&quot;,&quot;category&quot;:&quot;gift_ideas&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/products/gift_ideas/gifts_for_travelers.html" target="_self" title="TRAVELERS">
+<span class="bose-navBarFoldout2016__menuitemLabel">TRAVELERS</span>
+</a>
+</li>
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;gifts_for_technology_lovers&quot;,&quot;category&quot;:&quot;gift_ideas&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/products/gift_ideas/gifts_for_technology_lovers.html" target="_self" title="TECH LOVERS">
+<span class="bose-navBarFoldout2016__menuitemLabel">TECH LOVERS</span>
+</a>
+</li>
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;affordable_gifts&quot;,&quot;category&quot;:&quot;gift_ideas&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/products/gift_ideas/affordable_gifts.html" target="_self" title="UNDER $200">
+<span class="bose-navBarFoldout2016__menuitemLabel">UNDER $200</span>
+</a>
+</li>
+</ul>
+<ul class="bose-navBarFoldout2016__menuitems parent">
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;special_offers&quot;,&quot;category&quot;:&quot;gift_ideas&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/special_offers.html" target="_self" title="Special offers">
+<span class="bose-navBarFoldout2016__menuitemLabel">Special offers</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+<li class="bose-navBar2016__item   bose-navBar2016__menuItem--1">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;headphones&quot;,&quot;category&quot;:&quot;headphones&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/products/headphones.html" target="_self" class="bose-navBar2016__btn" title="Headphones">
+<span class="bose-navBar2016__btnText">Headphones</span>
+</a>
+<div class="bose-navBar2016__itemFoldout bose-navBarFoldout2016 bose-navBarFoldout2016" data-tracking-event="navigation-impression" data-tracking-info="{&quot;category&quot;:&quot;headphones&quot;,&quot;type&quot;:&quot;header&quot;}">
+<div class="bose-navBarFoldout2016__menuitemsWrapper">
+<div class="bose-navBarFoldout2016__menuitemsWrapper__inner parent" lpos="SubNavigation">
+<ul class="bose-navBarFoldout2016__menuitems parent">
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;headphones&quot;,&quot;category&quot;:&quot;headphones&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/shop_all/headphones/headphones.html" target="_self" title="Shop all
+">
+<span class="bose-navBarFoldout2016__menuitemLabel">Shop all
+</span>
+</a>
+</li>
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;new&quot;,&quot;category&quot;:&quot;headphones&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/shop_all/shop_all_products/new.html#drawer=show&amp;facet=productStatus%7CNEW" target="_self" title="New">
+<span class="bose-navBarFoldout2016__menuitemLabel">New</span>
+</a>
+</li>
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;special_offers&quot;,&quot;category&quot;:&quot;headphones&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/special_offers.html#drawer=show&amp;facet=promotionApplied%7CpromotionApplied" target="_self" title="Special offers">
+<span class="bose-navBarFoldout2016__menuitemLabel">Special offers</span>
+</a>
+</li>
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;outlet&quot;,&quot;category&quot;:&quot;headphones&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/products/outlet.html" target="_self" title="Outlet">
+<span class="bose-navBarFoldout2016__menuitemLabel">Outlet</span>
+</a>
+</li>
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;gift_ideas&quot;,&quot;category&quot;:&quot;headphones&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/products/gift_ideas.html" target="_self" title="Gifts">
+<span class="bose-navBarFoldout2016__menuitemLabel">Gifts</span>
+</a>
+</li>
+</ul>
+<ul class="bose-navBarFoldout2016__menuitems parent">
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;noise_cancelling_headphones&quot;,&quot;category&quot;:&quot;headphones&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/products/headphones/noise_cancelling_headphones.html" target="_self" title="Noise cancelling">
+<span class="bose-navBarFoldout2016__menuitemLabel">Noise cancelling</span>
+</a>
+</li>
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;wireless_headphones&quot;,&quot;category&quot;:&quot;headphones&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/products/headphones/wireless_headphones.html" target="_self" title="Wireless">
+<span class="bose-navBarFoldout2016__menuitemLabel">Wireless</span>
+</a>
+</li>
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;sports_headphones&quot;,&quot;category&quot;:&quot;headphones&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/products/headphones/sports_headphones.html" target="_self" title="Sports">
+<span class="bose-navBarFoldout2016__menuitemLabel">Sports</span>
+</a>
+</li>
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;conversation_enhancing_headphones&quot;,&quot;category&quot;:&quot;headphones&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/products/wellness/conversation_enhancing_headphones.html" target="_self" title="Hearing">
+<span class="bose-navBarFoldout2016__menuitemLabel">Hearing</span>
+</a>
+</li>
+</ul>
+<ul class="bose-navBarFoldout2016__menuitems parent">
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;aviation_headsets&quot;,&quot;category&quot;:&quot;headphones&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/products/headphones/aviation_headsets.html" target="_self" title="Aviation headsets">
+<span class="bose-navBarFoldout2016__menuitemLabel">Aviation headsets</span>
+</a>
+</li>
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;professional_communications&quot;,&quot;category&quot;:&quot;headphones&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/products/headphones/professional_communications.html" target="_self" title="SoundComm Headsets">
+<span class="bose-navBarFoldout2016__menuitemLabel">SoundComm Headsets</span>
+</a>
+</li>
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;headphone_accessories&quot;,&quot;category&quot;:&quot;headphones&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/products/headphones/headphone_accessories.html" target="_self" title="Accessories">
+<span class="bose-navBarFoldout2016__menuitemLabel">Accessories</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+<li class="bose-navBar2016__item   bose-navBar2016__menuItem--2">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;speakers&quot;,&quot;category&quot;:&quot;speakers&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/products/speakers.html" target="_self" class="bose-navBar2016__btn" title="Speakers">
+<span class="bose-navBar2016__btnText">Speakers</span>
+</a>
+<div class="bose-navBar2016__itemFoldout bose-navBarFoldout2016 bose-navBarFoldout2016" data-tracking-event="navigation-impression" data-tracking-info="{&quot;category&quot;:&quot;speakers&quot;,&quot;type&quot;:&quot;header&quot;}">
+<div class="bose-navBarFoldout2016__menuitemsWrapper">
+<div class="bose-navBarFoldout2016__menuitemsWrapper__inner parent" lpos="SubNavigation">
+<ul class="bose-navBarFoldout2016__menuitems parent">
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;speakers&quot;,&quot;category&quot;:&quot;speakers&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/shop_all/speakers/speakers.html" target="_self" title="Shop all
+">
+<span class="bose-navBarFoldout2016__menuitemLabel">Shop all
+</span>
+</a>
+</li>
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;new&quot;,&quot;category&quot;:&quot;speakers&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/shop_all/shop_all_products/new.html#drawer=show&amp;facet=productStatus%7CNEW" target="_self" title="New">
+<span class="bose-navBarFoldout2016__menuitemLabel">New</span>
+</a>
+</li>
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;special_offers&quot;,&quot;category&quot;:&quot;speakers&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/special_offers.html#drawer=show&amp;facet=promotionApplied%7CpromotionApplied" target="_self" title="Special offers">
+<span class="bose-navBarFoldout2016__menuitemLabel">Special offers</span>
+</a>
+</li>
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;outlet&quot;,&quot;category&quot;:&quot;speakers&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/products/outlet.html" target="_self" title="Outlet">
+<span class="bose-navBarFoldout2016__menuitemLabel">Outlet</span>
+</a>
+</li>
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;gift_ideas&quot;,&quot;category&quot;:&quot;speakers&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/products/gift_ideas.html" target="_self" title="Gifts">
+<span class="bose-navBarFoldout2016__menuitemLabel">Gifts</span>
+</a>
+</li>
+</ul>
+<ul class="bose-navBarFoldout2016__menuitems parent">
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;portable_speakers&quot;,&quot;category&quot;:&quot;speakers&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/products/speakers/portable_speakers.html" target="_self" title="Portable">
+<span class="bose-navBarFoldout2016__menuitemLabel">Portable</span>
+</a>
+</li>
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;smart_home&quot;,&quot;category&quot;:&quot;speakers&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/products/speakers/smart_home.html" target="_self" title="Smart home">
+<span class="bose-navBarFoldout2016__menuitemLabel">Smart home</span>
+</a>
+</li>
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;home_theater&quot;,&quot;category&quot;:&quot;speakers&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/products/speakers/home_theater.html" target="_self" title="Home theater">
+<span class="bose-navBarFoldout2016__menuitemLabel">Home theater</span>
+</a>
+</li>
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;soundbars&quot;,&quot;category&quot;:&quot;speakers&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/products/speakers/soundbars.html" target="_self" title="Soundbars">
+<span class="bose-navBarFoldout2016__menuitemLabel">Soundbars</span>
+</a>
+</li>
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;wave&quot;,&quot;category&quot;:&quot;speakers&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/products/speakers/wave.html" target="_self" title="Wave®">
+<span class="bose-navBarFoldout2016__menuitemLabel">Wave®</span>
+</a>
+</li>
+</ul>
+<ul class="bose-navBarFoldout2016__menuitems parent">
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;stereo_speakers&quot;,&quot;category&quot;:&quot;speakers&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/products/speakers/stereo_speakers.html" target="_self" title="Stereo">
+<span class="bose-navBarFoldout2016__menuitemLabel">Stereo</span>
+</a>
+</li>
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;soundwear&quot;,&quot;category&quot;:&quot;speakers&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/products/speakers/soundwear.html" target="_self" title="SoundWear">
+<span class="bose-navBarFoldout2016__menuitemLabel">SoundWear</span>
+</a>
+</li>
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;computer_speakers&quot;,&quot;category&quot;:&quot;speakers&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/products/speakers/computer_speakers.html" target="_self" title="Computer">
+<span class="bose-navBarFoldout2016__menuitemLabel">Computer</span>
+</a>
+</li>
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;portable_pa_speakers&quot;,&quot;category&quot;:&quot;speakers&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/products/speakers/portable_pa_speakers.html" target="_self" title="Portable PA">
+<span class="bose-navBarFoldout2016__menuitemLabel">Portable PA</span>
+</a>
+</li>
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;speaker_accessories&quot;,&quot;category&quot;:&quot;speakers&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/products/speakers/speaker_accessories.html" target="_self" title="Accessories">
+<span class="bose-navBarFoldout2016__menuitemLabel">Accessories</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+<li class="bose-navBar2016__item   bose-navBar2016__menuItem--3">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;frames&quot;,&quot;category&quot;:&quot;frames&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/products/frames.html" target="_self" class="bose-navBar2016__btn" title="Audio sunglasses">
+<span class="bose-navBar2016__btnText">Audio sunglasses</span>
+</a>
+<div class="bose-navBar2016__itemFoldout bose-navBarFoldout2016 bose-navBarFoldout2016" data-tracking-event="navigation-impression" data-tracking-info="{&quot;category&quot;:&quot;frames&quot;,&quot;type&quot;:&quot;header&quot;}">
+<div class="bose-navBarFoldout2016__menuitemsWrapper">
+<div class="bose-navBarFoldout2016__menuitemsWrapper__inner parent" lpos="SubNavigation">
+<ul class="bose-navBarFoldout2016__menuitems parent">
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;bose_frames_alto&quot;,&quot;category&quot;:&quot;frames&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/products/frames/bose-frames-alto.html" target="_self" title="Classic angular look: Alto">
+<span class="bose-navBarFoldout2016__menuitemLabel">Classic angular look: Alto</span>
+</a>
+</li>
+</ul>
+<ul class="bose-navBarFoldout2016__menuitems parent">
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;bose_frames_rondo&quot;,&quot;category&quot;:&quot;frames&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/products/frames/bose-frames-rondo.html" target="_self" title="Distinct rounded look: Rondo">
+<span class="bose-navBarFoldout2016__menuitemLabel">Distinct rounded look: Rondo</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+<li class="bose-navBar2016__item   bose-navBar2016__menuItem--4">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;better_with_bose&quot;,&quot;category&quot;:&quot;better_with_bose&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/better_with_bose.html" target="_self" class="bose-navBar2016__btn" title="Stories">
+<span class="bose-navBar2016__btnText">Stories</span>
+</a>
+<div class="bose-navBar2016__itemFoldout bose-navBarFoldout2016 bose-navBarFoldout2016" data-tracking-event="navigation-impression" data-tracking-info="{&quot;category&quot;:&quot;better_with_bose&quot;,&quot;type&quot;:&quot;header&quot;}" data-tracking-done="true">
+<div class="bose-navBarFoldout2016__menuitemsWrapper">
+<div class="bose-navBarFoldout2016__menuitemsWrapper__inner parent" lpos="SubNavigation">
+<ul class="bose-navBarFoldout2016__menuitems parent">
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;better_with_bose&quot;,&quot;category&quot;:&quot;better_with_bose&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/better_with_bose.html" target="_self" title="View all stories">
+<span class="bose-navBarFoldout2016__menuitemLabel">View all stories</span>
+</a>
+</li>
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;new-headphones&quot;,&quot;category&quot;:&quot;better_with_bose&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/better_with_bose/new-headphones.html" target="_self" title="New breed of headphones">
+<span class="bose-navBarFoldout2016__menuitemLabel">New breed of headphones</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+<li class="bose-navBar2016__item   bose-navBar2016__menuItem--5">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;support&quot;,&quot;category&quot;:&quot;support&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/support.html" target="_self" class="bose-navBar2016__btn" title="Support">
+<span class="bose-navBar2016__btnText">Support</span>
+</a>
+<div class="bose-navBar2016__itemFoldout bose-navBarFoldout2016 bose-navBarFoldout2016" data-tracking-event="navigation-impression" data-tracking-info="{&quot;category&quot;:&quot;support&quot;,&quot;type&quot;:&quot;header&quot;}">
+<div class="bose-navBarFoldout2016__menuitemsWrapper">
+<div class="bose-navBarFoldout2016__menuitemsWrapper__inner parent" lpos="SubNavigation">
+<ul class="bose-navBarFoldout2016__menuitems parent">
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;support&quot;,&quot;category&quot;:&quot;support&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/support.html" target="_self" title="Support home">
+<span class="bose-navBarFoldout2016__menuitemLabel">Support home</span>
+</a>
+</li>
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;noise_masking_sleepbuds&quot;,&quot;category&quot;:&quot;support&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/support/products/bose_headphones_support/bose_in_ear_headphones_support/noise-masking-sleepbuds.html" target="_self" title="Sleepbuds support">
+<span class="bose-navBarFoldout2016__menuitemLabel">Sleepbuds support</span>
+</a>
+</li>
+</ul>
+<ul class="bose-navBarFoldout2016__menuitems parent">
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;track-order&quot;,&quot;category&quot;:&quot;support&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/track-order.html" target="_self" title="Order tracking">
+<span class="bose-navBarFoldout2016__menuitemLabel">Order tracking</span>
+</a>
+</li>
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;service_and_repairs&quot;,&quot;category&quot;:&quot;support&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/support/service_and_repairs.html" target="_self" title="Service &amp; Repair">
+<span class="bose-navBarFoldout2016__menuitemLabel">Service &amp; Repair</span>
+</a>
+</li>
+</ul>
+<ul class="bose-navBarFoldout2016__menuitems parent">
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;headphone_accessories&quot;,&quot;category&quot;:&quot;support&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/products/headphones/headphone_accessories.html" target="_self" title="Headphone accessories">
+<span class="bose-navBarFoldout2016__menuitemLabel">Headphone accessories</span>
+</a>
+</li>
+<li class="bose-navBarFoldout2016__menuitem">
+<a data-tracking-event="navigation-click" data-tracking-info="{&quot;name&quot;:&quot;speaker_accessories&quot;,&quot;category&quot;:&quot;support&quot;,&quot;type&quot;:&quot;header&quot;}" href="https://www.bose.com/en_us/products/speakers/speaker_accessories.html" target="_self" title="Speaker accessories">
+<span class="bose-navBarFoldout2016__menuitemLabel">Speaker accessories</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+</ul>
+<a class="bose-navBar2016__icon" href="https://www.bose.com/en_us/store_locator.html"><span class="bose-navBar2016__textLabel">Stores</span><span class="bose-screenReaderText"></span>
+</a>
+<div>
+<input type="hidden" class="js-userProfile-microservice-url" value="https://nebula.prod02.bose.com/nebula-gd-gateway">
+<div class="bose-accountWidget js-accountWidget js-accountWidget-hamburger" data-gigyaurl="https://cdns.us1.gigya.com/js/gigya.js?apikey=3_omYBUUOETzxO0VR7yk9Z-KLFf6S0i_STTe8zNCg4VCzwMy2nK5XIdsbKENbdtVZp&amp;lang=en_us">
+<a class="bose-accountWidget__text js-accountWidget-signIn" href="javascript:void(0);">Sign in/register</a>
+<a class="bose-accountWidget__text js-accountWidget-options bose-accountWidget_hideBlock ctHidden" dashboard-path="/content/consumer_electronics/b2c/north_america/websites/en_us/index/myaccount/dashboard.html" href="https://www.bose.com/en_us/myaccount/dashboard.html"></a>
+</div>
+<input type="hidden" class="gigya-api-key" value="3_omYBUUOETzxO0VR7yk9Z-KLFf6S0i_STTe8zNCg4VCzwMy2nK5XIdsbKENbdtVZp">
+</div>
+</div>
+</div>
+</div>
+</div>
+<a name="mainContent" id="mainContent" aria-hidden="true" class="bose-header2016__mainContentAnchor"></a>
+</div>
+</div>
+</header>
+<main class="-fullWidth">
+<div class="parent bose-categoryPage">
+<section>
+<div class="bose-content-container">
+<div class="column">
+<div class="bose-column bose-column--fullWidth ">
+<div class="bose-column__container">
+<section class="grid-12 bose-column__column no-gutter ">
+<div class="no-gutter-left grid-6 grid-medium-6 clear-medium-left grid-small-12">
+<div class="panel">
+<div class="bose-panel -transparent  bose-panel--centered
+     bose-panel--noSpacing
+     bose-panel--top" data-mh="Rowgroup_1" style="height: 797px;">
+<div class="bose-panel__content">
+<div class="adaptiveImageComponent image parbase">
+<div class=" bose-adaptiveImage bose-adaptiveImage--fullWidth  bose-adaptiveImage--fullHeight">
+<div class="bose-adaptiveImage__container" style="margin-top:5%;">
+<img class="bose-adaptiveImage__image js-adaptiveImage lazyautosizes lazyloaded" src="boseframescover.jpeg">
+</div>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+<div class="no-gutter-left grid-6 grid-medium-6  grid-small-12">
+<div class="panel">
+<div class="bose-panel -transparent  bose-panel--centered
+     bose-panel--noSpacing
+     bose-panel--middle" data-mh="Rowgroup_1" style="height: 797px;">
+<div class="bose-panel__content">
+<div class="ghost">
+</div>
+<div class="text">
+<div class="bose-richText -black " style="margin-bottom:0px;">
+<p><span class="bose-richText__heading2">BOSE<br>
+</span></p>
+</div>
+</div>
+<div class="text">
+<div class="bose-richText -black " style="margin-top:0px;margin-bottom:0px;">
+<p style="text-align: center;"><span class="bose-richText__heading2">FRAMES</span></p>
+</div>
+</div>
+<div class="text">
+<div class="bose-richText -black " style="margin-top:0px;">
+<p><span class="bose-richText__display4">Audio Sunglasses</span></p>
+</div>
+</div>
+<div class="column">
+<div class="bose-column ">
+<div class="bose-column__container">
+<section class="grid-12 bose-column__column no-gutter ">
+<div class="no-gutter-left grid-6 grid-medium-6 clear-medium-left grid-small-12">
+<div class="buttonLink">
+<div class="bose-buttonLinkCenterContainer">
+<div data-tracking-event="button-impression" data-tracking-info="{&quot;name&quot;:&quot;clickthrough&quot;,&quot;text&quot;:&quot;EXPLORE ALTO&quot;,&quot;placement&quot;:&quot;center&quot;,&quot;targetpath&quot;:&quot;/en_us/product/bose_frames_alto.html&quot;}" class="bose-tracking-button" data-tracking-done="true">
+<a href="https://www.bose.com/en_us/products/frames/bose-frames-alto.html" style="margin-top:30px;margin-left:10px;margin-right:10px;" role="button" class="bose-buttonLink  none -withBorder    " title="EXPLORE ALTO" data-tracking-info="{&quot;name&quot;:&quot;clickthrough&quot;,&quot;text&quot;:&quot;EXPLORE ALTO&quot;,&quot;placement&quot;:&quot;center&quot;,&quot;targetpath&quot;:&quot;/en_us/product/bose_frames_alto.html&quot;}" data-tracking-event="button-click" target="_self">
+<span>EXPLORE ALTO</span>
+</a>
+</div>
+</div></div>
+<div class="text">
+<div class="bose-richText -black ">
+<p style="text-align: center;"><strong>Classic angular lenses, available in S/M and M/L.</strong><br>
+</p>
+</div>
+</div>
+</div>
+<div class="no-gutter-left grid-6 grid-medium-6  grid-small-12">
+<div class="buttonLink">
+<div class="bose-buttonLinkCenterContainer">
+<div data-tracking-event="button-impression" data-tracking-info="{&quot;name&quot;:&quot;clickthrough&quot;,&quot;text&quot;:&quot;EXPLORE RONDO&quot;,&quot;placement&quot;:&quot;center&quot;,&quot;targetpath&quot;:&quot;/en_us/product/bose_frames_rondo.html&quot;}" class="bose-tracking-button" data-tracking-done="true">
+<a href="https://www.bose.com/en_us/products/frames/bose-frames-rondo.html" style="margin-top:30px;margin-left:10px;margin-right:10px;" role="button" class="bose-buttonLink  none -withBorder    " title="EXPLORE RONDO" data-tracking-info="{&quot;name&quot;:&quot;clickthrough&quot;,&quot;text&quot;:&quot;EXPLORE RONDO&quot;,&quot;placement&quot;:&quot;center&quot;,&quot;targetpath&quot;:&quot;/en_us/product/bose_frames_rondo.html&quot;}" data-tracking-event="button-click" target="_self">
+<span>EXPLORE RONDO</span>
+</a>
+</div>
+</div></div>
+<div class="text">
+<div class="bose-richText -black ">
+<p style="text-align: center;"><strong>Distinct rounded lenses, available in a one-size S/M.</strong><br>
+</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<div class="column">
+<div class="bose-column bose-column--fullWidth ">
+<div class="bose-column__container">
+<section class="grid-12 bose-column__column no-gutter ">
+<div class="no-gutter-left grid-12 grid-medium-12 clear-medium-left grid-small-12">
+<div class="text">
+<div class="bose-richText -black " style="margin-top:15%;margin-bottom:0px;">
+<p style="text-align: center;"><strong><span class="bose-richText__display2">SUNGLASSES.</span></strong></p>
+</div>
+</div>
+<div class="text">
+<div class="bose-richText -black " style="margin-top:0px;">
+<p style="text-align: center;"><strong><span class="bose-richText__display2">WITH A SOUNDTRACK.</span></strong></p>
+</div>
+</div>
+<div class="text">
+<div class="bose-richText -black " style="margin-bottom:10%;margin-left:20%;margin-right:20%;">
+<p style="text-align: center;">Try them out below!</p>
+<br>
+
+<div class="video-container" height="500px" style="border:10px #333 solid; padding: 0;"><video autoplay="true" id="videoElement" height="500px" width="100%" style="background-color: #666666;"></video></div>
+
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+
+<div class="panel">
+<div class="bose-panel -white  
+     bose-panel--noSpacing
+     bose-panel--top">
+<div class="bose-panel__content">
+
+<div class="curalateSocialImages">
+<div class="bose-curalateSocialImages -whiteColor" data-page-type="campaignPage">
+<div>
+<div data-crl8-container-id="campaign" data-crl8-locale="en-US" data-crl8-filter="label:frames"></div>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+<div class="text">
+<div class="bose-richText  ">
+
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+<a class="bose-backToTop__button" href="#top"></a>
+<footer>
+<div class="bose-footer" lpos="Footer Container">
+<div class="bose-footer__moduleBarWrapper">
+<div class="bose-footer__moduleBarWrapper__moduleBar">
+<div class="bose-footer__container">
+<div class="bose-footer__socialMedia">
+<div class="socialPage">
+<div class="bose-socialMedia   bose-socialMedia--footer2016">
+<a data-mobileshowinhead="1" class="bose-socialMedia__icon bose-icon bose-icon--facebook -dark" href="https://www.facebook.com/Bose" title="Bose Facebook" target="_blank" rel="noopener noreferrer"><span class="bose-screenReaderText">Bose Facebook</span>
+</a>
+<a data-mobileshowinhead="2" class="bose-socialMedia__icon bose-icon bose-icon--twitter -dark" href="https://twitter.com/Bose" title="Bose Twitter" target="_blank" rel="noopener noreferrer"><span class="bose-screenReaderText">Bose Twitter</span>
+</a>
+<a data-mobileshowinhead="3" class="bose-socialMedia__icon bose-icon bose-icon--youtube -dark" href="http://www.youtube.com/user/Bose" title="Bose Youtube" target="_blank" rel="noopener noreferrer"><span class="bose-screenReaderText">Bose Youtube</span>
+</a>
+<a data-mobileshowinhead="4" class="bose-socialMedia__icon bose-icon bose-icon--instagram -dark" href="https://instagram.com/bose/" title="Bose Instagram" target="_blank" rel="noopener noreferrer"><span class="bose-screenReaderText">Bose Instagram</span>
+</a>
+</div>
+</div>
+</div>
+<div class="bose-footer__emailForm">
+<div class="bose-emailSubscriptionInput">
+<a target="_blank" href="https://www.bose.com/en_us/email_subscription_step_1.overlays.html" class="bose-emailSubscriptionInput__text overlay" title="Email sign up">
+Email sign up
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bose-footer__container">
+<div class="bose-footer__links" lpos="FooterNav">
+<div class="bose-footer__link">
+<div class="list">
+<div class="bose-list bose-list--footer2016 -bold   ">
+<ul class="bose-list__list bose-list__list--noBullets">
+<li class="bose-list__listitem ">
+<span>
+<a class="bose-link  " href="https://pro.bose.com/" target="_target" alt="Bose Professional" title="Bose Professional">Bose Professional</a>
+</span>
+</li>
+<li class="bose-list__listitem ">
+<span>
+<a class="bose-link  " href="https://automotive.bose.com/?utm_source=bose.com&amp;utm_medium=referral&amp;utm_content=footer-link" target="_self" alt="Automotive Systems" title="Automotive Systems">Automotive Systems</a>
+</span>
+</li>
+<li class="bose-list__listitem ">
+<span>
+<a class="bose-link  " href="https://www.bose.com/en_us/military.html" target="_self" alt="Military Applications" title="Military Applications">Military Applications</a>
+</span>
+</li>
+<li class="bose-list__listitem ">
+<span>
+<a class="bose-link  " href="https://www.bose.com/en_us/products/wellness/conversation_enhancing_headphones/hearphones.html" target="_self" alt="Bose Hearphones" title="Bose Hearphones">Bose Hearphones</a>
+</span>
+</li>
+<li class="bose-list__listitem bose-list__listitem--last">
+<span>
+<a class="bose-link  " href="https://www.bose.com/en_us/products/headphones/professional_communications/soundcomm-b40-headset.html" target="_target" alt="SOUNDCOMM B40 HEADSET" title="SOUNDCOMM B40 HEADSET">SOUNDCOMM B40 HEADSET</a>
+</span>
+</li>
+</ul>
+</div></div>
+</div>
+<div class="bose-footer__link">
+<div class="list">
+<div class="bose-list bose-list--footer2016   ">
+<ul class="bose-list__list bose-list__list--noBullets">
+<li class="bose-list__listitem ">
+<span>
+<a class="bose-link  " href="https://www.bose.com/en_us/contact_us.html" target="_self" alt="Contact Us" title="Contact Us">Contact Us</a>
+</span>
+</li>
+<li class="bose-list__listitem ">
+<span>
+<a class="bose-link  " href="https://www.bose.com/en_us/store_locator.html" target="_self" alt="Find a Store" title="Find a Store">Find a Store</a>
+</span>
+</li>
+<li class="bose-list__listitem ">
+<span>
+<a class="bose-link  " href="https://www.bose.com/en_us/about_bose.html" target="_self" alt="About Us" title="About Us">About Us</a>
+</span>
+</li>
+<li class="bose-list__listitem ">
+<span>
+<a class="bose-link  " href="https://www.bose.com/en_us/careers.html" target="_self" alt="Work at Bose" title="Work at Bose">Work at Bose</a>
+</span>
+</li>
+<li class="bose-list__listitem ">
+<span>
+<a class="bose-link  " href="https://www.bose.com/en_us/about_bose/programs_discounts/bose_incentives.html" target="_self" alt="Bose Partner Program" title="Bose Partner Program">Bose Partner Program</a>
+</span>
+</li>
+<li class="bose-list__listitem bose-list__listitem--last">
+<span>
+<a class="bose-link  " href="http://global.bose.com/" target="_self" alt="Bose Worldwide" title="Bose Worldwide">Bose Worldwide</a>
+</span>
+</li>
+</ul>
+</div></div>
+</div>
+<div class="bose-footer__link">
+<div class="list">
+<div class="bose-list bose-list--footer2016   ">
+<ul class="bose-list__list bose-list__list--noBullets">
+<li class="bose-list__listitem ">
+<span>
+<a class="bose-link  " href="https://www.bose.com/en_us/legal/privacy_policy.html" target="_self" alt="Privacy policy" title="Privacy policy">Privacy policy</a>
+</span>
+</li>
+<li class="bose-list__listitem ">
+<span>
+<a class="bose-link  " href="https://www.bose.com/en_us/legal/california_privacy_notice_of_collection.html" target="_self" alt="California Privacy Notice of Collection" title="California Privacy Notice of Collection">California Privacy Notice of Collection</a>
+</span>
+</li>
+<li class="bose-list__listitem ">
+<span>
+<a class="bose-link  " href="https://www.bose.com/en_us/legal/terms_of_use.html" target="_self" alt="Terms of use" title="Terms of use">Terms of use</a>
+</span>
+</li>
+<li class="bose-list__listitem ">
+<span>
+<a class="bose-link  " href="https://www.bose.com/en_us/legal/terms_of_sale.html" target="_self" alt="Terms of sale" title="Terms of sale">Terms of sale</a>
+</span>
+</li>
+<li class="bose-list__listitem ">
+<span>
+<a class="bose-link  " href="https://www.bose.com/en_us/legal/be_aware_of_counterfeit_products.html" target="_self" alt="Beware of counterfeits" title="Beware of counterfeits">Beware of counterfeits</a>
+</span>
+</li>
+<li class="bose-list__listitem ">
+<span>
+<a class="bose-link  " href="https://www.bose.com/en_us/legal/cookie_policy.html" target="_self" alt="Cookies Notice" title="Cookies Notice">Cookies Notice</a>
+</span>
+</li>
+<li class="bose-list__listitem ">
+<span>
+<a class="bose-link  " href="https://www.bose.com/en_us/trademarks.html" target="_self" alt="Trademarks" title="Trademarks">Trademarks</a>
+</span>
+</li>
+<li class="bose-list__listitem ">
+<span>
+<a class="bose-link  " href="https://www.bose.com/en_us/support/accessibility.html" target="_self" alt="Accessibility" title="Accessibility">Accessibility</a>
+</span>
+</li>
+<li class="bose-list__listitem bose-list__listitem--last">
+<span>
+<a class="bose-link  " href="https://www.bose.com/en_us/about_bose/sustainability.html" target="_self" alt="Sustainability at Bose" title="Sustainability at Bose">Sustainability at Bose</a>
+</span>
+</li>
+</ul>
+</div></div>
+</div>
+</div>
+</div>
+<div class="bose-footer__container bose-footer__container--localeAriaArea">
+<div class="bose-footer__languageBar">
+<div class="bose-localeSelector bose-localeSelector--2016" data-multilingual-site="false" data-show-modal="true" data-default-locale="en_us" data-url="/en_us/products/frames.html">
+<span class="bose-iconFlag bose-iconFlag--us">&nbsp;</span>
+<span class="bose-localeSelector__locale">
+<span class="bose-localeSelector__currentLocale">United States</span>
+<a class="bose-localeSelector__link2016" href="http://global.bose.com/" title="Change"><span>Change »</span></a>
+</span>
+</div>
+</div>
+<div class="bose-footer__ariaArea">
+</div>
+</div>
+<div class="bose-footer__container">
+<div class="bose-footer__legalNotice">
+<a itemprop="url" href="https://www.bose.com/en_us/index.html" title="Bose" class="bose-footer__logo">
+<img class="lazyload" data-src="/etc/designs/bose/consumer-products-2016/design/images/bose_logo.png.pagespeed.ce.qxWWea8Czh.png" alt="Bose"></a>
+<div class="bose-footer__legalNoticeFlexContainer">
+<div class="bose-footer__legalNoticeFlexAlign">
+<div class="bose-footer__copyRight">
+<div class="bose-footer__copyrightNote">© Bose Corporation 2020</div>
+</div>
+<div class="bose-footer__legalOthers">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bose-localeSelector bose-localeSelector--modal" data-multilingual-site="false" data-show-modal="true" style="display:none">
+<span class="bose-localeSelector__currentLocale">
+<span class="bose-iconFlag bose-iconFlag--us_4x3">&nbsp;</span>
+<span class="bose-localeSelector__langName">United States</span>
+</span>
+<div class="bose-localeSelector__languages">
+<a class="bose-localeSelector__link bose-localeSelector__link--language js-removePrivacyCookie" href="https://www.bose.com/en_us/products/frames.html" data-locale="en_us">
+<span>English</span>
+</a>
+</div>
+</div>
+</footer>
+<script type="text/javascript" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/jqueryUi.js"></script>
+<script type="text/javascript" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/jqueryWaypoints.js"></script>
+<script type="text/javascript" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/slick.js"></script>
+<script type="text/javascript" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/clientlibs-b2c_006.js"></script>
+<script type="text/javascript" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/clientlibs-b2c.js"></script>
+<script type="text/javascript" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/clientlibs-b2c_003.js"></script>
+<script type="text/javascript" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/clientlibs_003.js"></script>
+<script type="text/javascript" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/clientlibs-b2c_007.js"></script>
+<script type="text/javascript" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/clientlibs_005.js"></script>
+<script type="text/javascript" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/clientlibs_006.js"></script>
+<script type="text/javascript" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/base-class.js"></script>
+<script type="text/javascript" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/clientlibs_002.js"></script>
+<script type="text/javascript" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/clientlibs.js"></script>
+<script type="text/javascript" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/clientlibs_007.js"></script>
+<script type="text/javascript" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/granite_min.js"></script>
+<script type="text/javascript" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/jquery_min.js"></script>
+<script type="text/javascript" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/shared_min.js"></script>
+<script type="text/javascript" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/javascript-footer-all.js"></script>
+<link rel="stylesheet" href="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/clientlibs-b2c_003.css" type="text/css">
+<script type="text/javascript" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/clientlibs_004.js"></script>
+<script type="text/javascript" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/clientlibs-b2c_004.js"></script>
+<script type="text/javascript" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/clientlibs-b2c_005.js"></script>
+<script type="text/javascript" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/clientlib-analytics.js"></script>
+<script type="text/javascript" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/clientlib-analytics_002.js"></script>
+<script type="text/javascript" src="js/video.js"></script>
+<div class="cloudservice exacttarget">
+</div>
+<script type="text/javascript">if (typeof _satellite !== "undefined"){ _satellite.pageBottom();}</script><!-- 
+Start of global snippet: Please do not remove
+Place this snippet between the <head> and </head> tags on every page of your site.
+-->
+<!-- Global site tag (gtag.js) - Google Marketing Platform -->
+<script async="" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'DC-8454955');
+</script>
+<!-- End of global snippet: Please do not remove --><script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"20061898"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script><script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('set', 'autoConfig', 'false', '614560262052456');
+fbq('init', '614560262052456'); 
+fbq('track', 'PageView');
+</script><!-- Global site tag (gtag.js) - Google Ads: 1038472573 -->
+<script async="" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/js_002"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-1038472573');
+</script><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/js_003"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-64265651-1');
+</script><script>_satellite["__runScript3"](function(event, target) {
+/* Twitter universal website tag code */
+
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+// Insert Twitter Pixel ID and Standard Event data below
+
+twq('init','o0ek7');
+twq('track','PageView');
+
+/* End Twitter universal website tag code */
+});</script><!-- Pinterest Tag -->
+<script>
+!function(e){if(!window.pintrk){window.pintrk = function () {
+window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var
+  n=window.pintrk;n.queue=[],n.version="3.0";var
+  t=document.createElement("script");t.async=!0,t.src=e;var
+  r=document.getElementsByTagName("script")[0];
+  r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
+pintrk('load', '2614860888212');
+pintrk('page');
+</script>
+<!-- end Pinterest Tag --><script>_satellite["__runScript4"](function(event, target) {
+var visualIQScript = document.createElement('script');
+visualIQScript.src = '//vt.myvisualiq.net/1/xcMRDjwST9M4Bf0YkeTiXQ%3D%3D/vt-19.js';
+document.body.appendChild(visualIQScript);
+});</script><script src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/vt-19.js"></script><script type="text/javascript" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/bose-functionalCookieStore.js"></script><!--
+Event snippet for Bose_US_US_Catchall on https://www.bose.com/en_us/index.html: Please do not remove.
+Place this snippet on pages with events you’re tracking. 
+Creation date: 05/20/2019
+-->
+<script>
+  gtag('event', 'conversion', {
+    'allow_custom_scripts': true,
+    'u29': 'https://www.bose.com/en_us/products/frames.html',
+    'send_to': 'DC-8454955/sitea812/bose_0+standard'
+  });
+</script>
+<!-- End of event snippet: Please do not remove --><!--
+ Event snippet for CategoryUS on https://www.bose.com/en_us/index.html: Please do not remove.
+ Place this snippet on pages with events you’re tracking. 
+ Creation date: 04/23/2019
+ -->
+ <script>
+  gtag('event', 'conversion', {
+  'allow_custom_scripts': true,
+  'u30': 'frames',
+  'send_to': 'DC-8454955/sitea812/categ0+standard'
+  });
+ </script><!-- BRANDED --> <!-- Extole -->
+<script type="text/javascript" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/core_003.js" async=""></script>
+
+<!-- UNBRANDED until CNAME is complete -->
+<script type="text/javascript" src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/core.js" async=""></script>
+
+<input type="hidden" class="bose-dataCapture__currentPagePath" value="/content/consumer_electronics/b2c/north_america/websites/en_us/category/frames">
+<span role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></span><script src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/index.js"></script><script src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/index.js"></script><script src="Wearables%20by%20Bose%20%E2%80%93%20AR%20Audio%20Sunglasses_files/index.js"></script></body></html>

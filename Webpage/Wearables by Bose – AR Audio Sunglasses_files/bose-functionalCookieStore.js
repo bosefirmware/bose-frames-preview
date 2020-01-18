@@ -1,0 +1,1 @@
+var Bose=Bose||{};Bose.FunctionalCookieStore=Bose.FunctionalCookieStore||{},Bose.FunctionalCookieStore.setDataCaptureViewed=function(a){var b="bose-"+a+"-viewed";Cookies.set(b,!0,{expires:365})},Bose.FunctionalCookieStore.setDataCaptureViews=function(a,b){var c="bose-"+a+"-views";Cookies.set(c,b,{expires:365})};
