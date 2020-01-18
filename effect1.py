@@ -4,19 +4,17 @@ import dlib
 from math import hypot
 
 # Loading Camera and Nose image and Creating mask
-cap = cv2.VideoCapture(0)
 frameImg = cv2.imread("boseframesnolens.png")
-
-_, frame = cap.read()
-rows, cols, _ = frame.shape
-frameMask = np.zeros((rows, cols), np.uint8)
+cap = cv2.VideoCapture(0)
 
 # Loading Face detector
 detector = dlib.get_frontal_face_detector()
 predictor = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")
 
-while True:
-    _, frame = cap.read()
+def applyFilter(frame):
+    rows, cols, _ = frame.shape
+    frameMask = np.zeros((rows, cols), np.uint8)
+
     frameMask.fill(0)
     gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
@@ -57,20 +55,17 @@ while True:
         final_nose = cv2.add(frameAreaNoFrame, resizedGlasses)
         frame[top_left[1]: top_left[1] + frameHeight,
             top_left[0]: top_left[0] + frameWidth] = final_nose
+        
+    
+    return frame
 
-        # frame[top_left[1]: top_left[1] + nose_height,
-        #             top_left[0]: top_left[0] + nose_width] = final_nose
-
-        # cv2.imshow("Nose area", nose_area)
-        # cv2.imshow("Nose pig", nose_pig)
-        # cv2.imshow("final nose", final_nose)
-
-
-
-    cv2.imshow("Frame", frame)
+if __name__ == "__main__":
+     while True:
+        _, curFrame = cap.read()
+        cv2.imshow("Frame", applyFilter(curFrame))
 
 
 
-    key = cv2.waitKey(1)
-    if key == 27:
-        break
+        key = cv2.waitKey(1)
+        if key == 27:
+            break
